@@ -90,24 +90,25 @@ const ExperienceSection = styled.section`
 `;
 
 const SectionTitle = styled.h2`
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: 700;
-  color: #646cff;
+  color: #5A7ACD;
   text-align: center;
-  margin: 0 0 16px 0;
-  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  margin: 0 0 8px 0;
 `;
 
 const SectionSubtitle = styled.p`
-  font-size: 1.1rem;
-  color: #666;
+  font-size: 18px;
+  color: #2B2A2A;
   text-align: center;
-  margin: 0 0 80px 0;
-  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  margin: 0 0 60px 0;
 `;
 
 const ExperienceContainer = styled.div`
   margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const ExperienceItem = styled.div`
@@ -115,10 +116,13 @@ const ExperienceItem = styled.div`
   gap: 24px;
   margin-bottom: 40px;
   padding: 2px;
+  width: 520px;
+  max-width: 100%;
 
   @media (max-width: 768px) {
     flex-direction: column;
     gap: 16px;
+    width: 100%;
   }
 `;
 
@@ -176,10 +180,14 @@ const LanguageItem = styled.div`
   display: flex;
   gap: 24px;
   padding: 32px;
+  width: 520px;
+  max-width: 100%;
+  margin: 0 auto;
 
   @media (max-width: 768px) {
     flex-direction: column;
     gap: 16px;
+    width: 100%;
   }
 `;
 

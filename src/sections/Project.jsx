@@ -194,20 +194,18 @@ const ProjectsSection = styled.section`
 `;
 
 const SectionTitle = styled.h2`
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: 700;
-  color: #2B2A2A;
+  color: #5A7ACD;
   text-align: center;
-  margin: 0 0 16px 0;
-  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  margin: 0 0 8px 0;
 `;
 
 const SectionSubtitle = styled.p`
-  font-size: 1.1rem;
-  color: #666;
+  font-size: 18px;
+  color: #2B2A2A;
   text-align: center;
-  margin: 0 0 30px 0;
-  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  margin: 0 0 60px 0;
 `;
 
 
@@ -216,12 +214,13 @@ const CategoryFilter = styled.div`
   display: flex;
   justify-content: center;
   gap: 12px;
-  margin-bottom: 60px;
+  margin: 0 auto 60px auto;
   flex-wrap: wrap;
   background: white;
   border-radius: 50px;
   padding: 8px;
 `;
+
 const CategoryButton = styled.button`
   padding: 10px 24px;
   border-radius: 50px;
@@ -233,9 +232,18 @@ const CategoryButton = styled.button`
   color: ${props => props.active ? '#5A7ACD' : '#7E8793'};
   cursor: pointer;
   transition: all 0.3s ease;
+  outline: none;
 
   &:hover {
     transform: translateY(-2px);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
   }
 `;
 
@@ -448,10 +456,19 @@ const CloseButton = styled.button`
   color: #2B2A2A;
   transition: all 0.3s ease;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  outline: none;
 
   &:hover {
     background: #e0e0e0;
     transform: rotate(90deg);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
   }
 `;
 

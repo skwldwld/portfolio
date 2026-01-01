@@ -51,20 +51,18 @@ const SkillsSection = styled.section`
 `;
 
 const SectionTitle = styled.h2`
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: 700;
   color: #5A7ACD;
   text-align: center;
-  margin: 0 0 16px 0;
-  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  margin: 0 0 8px 0;
 `;
 
 const SectionSubtitle = styled.p`
-  font-size: 1.1rem;
-  color: #666;
+  font-size: 18px;
+  color: #2B2A2A;
   text-align: center;
-  margin: 0 0 80px 0;
-  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  margin: 0 0 60px 0;
 `;
 
 const CategoryContainer = styled.div`
@@ -72,6 +70,9 @@ const CategoryContainer = styled.div`
   opacity: 0;
   animation: ${fadeInUp} 0.8s ease-out forwards;
   animation-delay: ${props => props.delay || 0.1}s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const CategoryTitle = styled.h3`
@@ -80,12 +81,18 @@ const CategoryTitle = styled.h3`
   color: #2B2A2A;
   margin: 0 0 24px 0;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  width: 100%;
+  max-width: 800px;
+  text-align: left;
 `;
 
 const TagContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  width: 100%;
+  max-width: 800px;
+  justify-content: flex-start;
 `;
 
 const Tag = styled.div`

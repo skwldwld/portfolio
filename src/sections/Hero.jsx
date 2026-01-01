@@ -10,8 +10,8 @@ function Hero() {
     }
   };
 
-  const scrollToAbout = () => {
-    scrollToSection('about');
+  const scrollToMessage = () => {
+    scrollToSection('message');
   };
 
   return (
@@ -28,7 +28,7 @@ function Hero() {
           회사와 함께 세상을 바꾸고 싶습니다.
         </HeroDescription>
       </HeroContent>
-      <ScrollIndicator onClick={scrollToAbout}>
+      <ScrollIndicator onClick={scrollToMessage}>
         <ScrollIcon src={scrollIcon} alt="Scroll down" />
       </ScrollIndicator>
     </HeroSection>
