@@ -1,0 +1,37 @@
+{
+  "experiences": [
+    {
+      "id": "lion",
+      "icon": "lion",
+      "title": "멋쟁이사자처럼",
+      "period": "24.01 - 24.07",
+      "role": "12기 프론트엔드 개발자",
+      "description": ""
+    },
+    {
+      "id": "volunteer",
+      "icon": "heart",
+      "title": "SW 교육봉사",
+      "period": "24.01 - 24.07",
+      "role": "앱인벤터를 사용하여 교내 안내 어플 제작",
+      "description": "전국 프로그래밍 대회 대상 수상"
+    },
+    {
+      "id": "intern",
+      "icon": "building",
+      "title": "센싱플러스",
+      "period": "25.06 - 25.08",
+      "role": "3D 디지털트윈 기반 웹 개발 인턴",
+      "description": ""
+    }
+  ],
+  "languages": [
+    {
+      "id": "opic",
+      "icon": "en",
+      "title": "OPIc",
+      "level": "AL (Advanced Low)"
+    }
+  ]
+}
+

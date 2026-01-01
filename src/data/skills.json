@@ -1,0 +1,53 @@
+{
+  "categories": [
+    {
+      "category": "Language",
+      "tags": [
+        { "name": "JavaScript", "bgColor": "#F7DF1E", "textColor": "#2B2A2A" },
+        { "name": "C", "bgColor": "#A8B9CC", "textColor": "#2B2A2A" },
+        { "name": "C++", "bgColor": "#00599C", "textColor": "#FFFFFF" },
+        { "name": "Python", "bgColor": "#3776AB", "textColor": "#FFFFFF" },
+        { "name": "Java", "bgColor": "#ED8B00", "textColor": "#FFFFFF" }
+      ]
+    },
+    {
+      "category": "3D",
+      "tags": [
+        { "name": "Three.js", "bgColor": "#000000", "textColor": "#FFFFFF" },
+        { "name": "WebGL", "bgColor": "#000000", "textColor": "#FFFFFF" }
+      ]
+    },
+    {
+      "category": "Backend",
+      "tags": [
+        { "name": "Firebase", "bgColor": "#FF611A", "textColor": "#FFFFFF" },
+        { "name": "MySQL", "bgColor": "#4479A1", "textColor": "#FFFFFF" },
+        { "name": "HeidiSQL", "bgColor": "#6B8E23", "textColor": "#FFFFFF" }
+      ]
+    },
+    {
+      "category": "Version Control",
+      "tags": [
+        { "name": "Git", "bgColor": "#F05032", "textColor": "#FFFFFF" },
+        { "name": "SVN", "bgColor": "#809CC9", "textColor": "#FFFFFF" }
+      ]
+    }
+  ],
+  "technologies": {
+    "JavaScript": { "bgColor": "#F7DF1E", "textColor": "#2B2A2A" },
+    "C": { "bgColor": "#A8B9CC", "textColor": "#2B2A2A" },
+    "C++": { "bgColor": "#00599C", "textColor": "#FFFFFF" },
+    "Python": { "bgColor": "#3776AB", "textColor": "#FFFFFF" },
+    "Java": { "bgColor": "#ED8B00", "textColor": "#FFFFFF" },
+    "Three.js": { "bgColor": "#000000", "textColor": "#FFFFFF" },
+    "WebGL": { "bgColor": "#000000", "textColor": "#FFFFFF" },
+    "Firebase": { "bgColor": "#FF611A", "textColor": "#FFFFFF" },
+    "MySQL": { "bgColor": "#4479A1", "textColor": "#FFFFFF" },
+    "HeidiSQL": { "bgColor": "#6B8E23", "textColor": "#FFFFFF" },
+    "Git": { "bgColor": "#F05032", "textColor": "#FFFFFF" },
+    "SVN": { "bgColor": "#809CC9", "textColor": "#FFFFFF" },
+    "React": { "bgColor": "#61DAFB", "textColor": "#2B2A2A" },
+    "Node.js": { "bgColor": "#339933", "textColor": "#FFFFFF" }
+  }
+}
+
