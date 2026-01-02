@@ -3,53 +3,136 @@
     {
       "id": "hotspot",
       "title": "HotSpot",
-      "category": "캡스톤 프로젝트",
+      "category": "멋쟁이사자처럼",
       "period": "2024.03 - 2024.07",
       "teamSize": "4명 (PD 1, FE 2, BE 1)",
-      "technologies": ["React"],
+      "technologies": ["React", "Figma"],
       "description": "매운 음식을 좋아하는 사람들을 위한 매운 맛 지도.",
       "achievements": [
         "멋쟁이사자처럼 해커톤 대상 수상",
         "교내 sw 개발 경진대회 우수상 수상"
       ],
       "details": [
-        "기획자 부재의 상황에서 디자이너, 개발자가 만들어낸 값진 프로젝트입니다",
-        "맵기레벨 테스트",
-        "맵기 레벨에 따라 자신에게 맞는 맛집을 추천받을 수 있습니다",
-        "실시간 지도 기반 맛집 검색 및 리뷰 기능"
+        "기획자 부재의 상황에서 디자이너, 개발자가 만들어낸 값진 프로젝트입니다.",
+        "맵기레벨 테스트(매운 음식을 얼마나 잘 먹는지) 결과를 바탕으로 맵기 레벨이 정해집니다.",
+        "각자의 맵기 레벨에 맞는 매운 음식 맛집을 추천받을 수 있습니다.",
+        "카카오맵 기반 맛집 검색 및 매운 정도에 대한 리뷰(불점)를 남길 수도 있습니다."
       ],
-      "github": "https://github.com/example/hotspot"
+      "github": "https://github.com/LikeLionHGU/Hot_Front"
     },
     {
-      "id": "project2",
-      "title": "프로젝트 2",
+      "id": "pickle",
+      "title": "Pickle",
       "category": "멋쟁이사자처럼",
-      "period": "2024.01 - 2024.06",
-      "teamSize": "3명",
-      "technologies": ["React", "Node.js"],
-      "description": "프로젝트 설명입니다.",
+      "period": "2024.07 - 2024.08",
+      "teamSize": "6명 (PM 1, PD 1, FE 2, BE 1)",
+      "technologies": ["React", "Figma"],
+      "description": "장애인을 위한 스포츠 강좌 선택 수강 플랫폼.",
       "achievements": [],
       "details": [
-        "상세 내용 1",
-        "상세 내용 2"
+        "장애인들도 운동 기회를 침해받지 않도록 장애인에게만 포커스를 맞춘 스포츠 강좌 수강 플랫폼입니다.",
+        "지역, 운동 종목, 장애 유형 등 항목별로 상세한 필터링을 통해 맞춤형 스포츠 강좌를 더 수월하게 찾을 수 있습니다.",
+        "강사의 프로필에서 취득한 장애인 교육 관련 자격증, 강좌 개설 내역 등을 확인할 수 있어 안심하고 운동에 집중할 수 있습니다."
+      ],
+      "github": "https://github.com/LikeLionHGU/Pickle-Front-2024"
+    },
+    {
+      "id": "partybread",
+      "title": "팟빵",
+      "category": "개인 프로젝트",
+      "period": "2024.11 - 2024.12",
+      "teamSize": "3명",
+      "technologies": ["Dart", "Firebase", "Figma"],
+      "description": "팟(파티원)을 찾는 어플리케이션.",
+      "achievements": [],
+      "details": [
+        "배달, 택시, 공동구매 등 혼자서 하기에는 애매할 때, 함께할 파티원을 구하는 것을 도와주는 어플입니다.",
+        "팟 구성원들끼리의 채팅 기능, 영수증 스캔을 통한 정산 기능을 통해 사용자의 편리성을 더해주었습니다.",
+        "개발자 세 명이 디자인부터 프론트엔드, 백엔드까지 모두 개발하였다는 점에서 의미가 있습니다."
+      ],
+      "github": "https://github.com/hwan129/party_bread"
+    },
+    {
+      "id": "whattheball",
+      "title": "What The Ball",
+      "category": "개인 프로젝트",
+      "period": "2025.04 - 2025.06",
+      "teamSize": "1명",
+      "technologies": ["JavaScript", "Three.js", "Cannon.js"],
+      "description": "예측 불가 농구 게임.",
+      "achievements": [],
+      "details": [
+        "다양한 종류의 공(방울토마토, 눈덩이, 볼링공 등)을 랜덤으로 배정 받아 농구 골대에 던지는 게임입니다.",
+        "물리 엔진을 사용해 공의 종류별로 각각의 특성에 맞게 질량과 충돌 시 반응(터져서 충돌면에 붙는 등)을 다르게 설정하였습니다.",
+        "친구들과 내기를 할 때 재미 요소로 사용하기 좋은 게임입니다."
+      ],
+      "github": "https://github.com/skwldwld/Basketball"
+    },
+    {
+      "id": "portfolio",
+      "title": "Portfolio",
+      "category": "개인 프로젝트",
+      "period": "2025.12 - 2026.01",
+      "teamSize": "1명",
+      "technologies": ["React", "Figma"],
+      "description": "포트폴리오.",
+      "achievements": [],
+      "details": [
+        "학력이나 경력 사항, 진행했던 프로젝트 등 저의 포트폴리오를 함축시켰습니다."
+      ],
+      "github": "https://github.com/skwldwld/portfolio"
+    },
+    {
+      "id": "capstone",
+      "title": "디지털트윈 로봇 관제 시스템",
+      "category": "캡스톤 프로젝트",
+      "period": "2024.08 - 2025.07",
+      "teamSize": "4명",
+      "technologies": ["Three.js", "Python", "React", "Supabase"],
+      "description": "가우시안 스플래팅 모델 기반 3D 로봇 관제 시스템.",
+      "achievements": ["HCI 2025 논문 게재", "컴퓨터그래픽스 학회"],
+      "details": [
+        "3D 모델과 로봇 맵 상의 좌표계를 일치시켜 웹상에서 로봇을 관제할 수 있습니다.",
+        "가우시안 스플래팅 모델의 퀄리티를 유지하며 모델의 크기를 경량화하여 웹 상에 업로드하기에 적절하도록 만들었습니다.",
+      ],
+      "github": "https://github.com/Digital-Twin-CGV/GaussianSplattingforweb"
+    },
+    {
+      "id": "postcapstone",
+      "title": "가우시안 스플래팅 모델 평탄화",
+      "category": "캡스톤 프로젝트",
+      "period": "2025.09 - 2025.12",
+      "teamSize": "2명",
+      "technologies": ["Python", "Unity"],
+      "description": "포스트 캡스톤.",
+      "achievements": ["IEEE VR 논문 게재"],
+      "details": [
+        "캡스톤 프로젝트 이후 가우시안 스플래팅 성능에 집중하여 더 연구하고 싶은 사람들만 모여서 진행하였습니다.",
+        "3D 로봇 시뮬레이터 제작 시 가우시안 스플래팅 모델의 특성상 바닥이나 공중에 플로터들이 떠다니는 문제가 있었습니다.",
+        "그 문제를 해결하기 위하여 YOLO, RANSAC 등의 알고리즘을 사용하여 바닥면을 추정하고, 해당 바닥 주변의 플로터들은 추정한 평면에 직교투영합니다.",
+        "그 결과물로 Mesh를 제작한 후 Unity에 업로드합니다.",
+        "Unity 상에서 시각화 렌더링은 가우시안 스플래팅 모델을, 로봇 시뮬레이션 진행 시 충돌 감지를 위해 평평하게 만들어진 물리용 바닥 Mesh를 합칩니다."
       ],
       "github": ""
     },
     {
-      "id": "project3",
-      "title": "프로젝트 3",
+      "id": "minimap",
+      "title": "가우시안 스플래팅 미니맵 제작",
       "category": "인턴십",
-      "period": "2024.07 - 2024.08",
+      "period": "2025.06 - 2025.08",
       "teamSize": "2명",
-      "technologies": ["Three.js", "WebGL"],
-      "description": "3D 웹 개발 프로젝트입니다.",
-      "achievements": [],
+      "technologies": ["Python", "Unity"],
+      "description": "포스트 캡스톤.",
+      "achievements": ["IEEE VR 논문 게재"],
       "details": [
-        "3D 디지털트윈 기반 웹 애플리케이션",
-        "실시간 3D 렌더링"
+        "캡스톤 프로젝트 이후 가우시안 스플래팅 성능에 집중하여 더 연구하고 싶은 사람들만 모여서 진행하였습니다.",
+        "3D 로봇 시뮬레이터 제작 시 가우시안 스플래팅 모델의 특성상 바닥이나 공중에 플로터들이 떠다니는 문제가 있었습니다.",
+        "그 문제를 해결하기 위하여 YOLO, RANSAC 등의 알고리즘을 사용하여 바닥면을 추정하고, 해당 바닥 주변의 플로터들은 추정한 평면에 직교투영합니다.",
+        "그 결과물로 Mesh를 제작한 후 Unity에 업로드합니다.",
+        "Unity 상에서 시각화 렌더링은 가우시안 스플래팅 모델을, 로봇 시뮬레이션 진행 시 충돌 감지를 위해 평평하게 만들어진 물리용 바닥 Mesh를 합칩니다."
       ],
       "github": ""
-    }
+    },
   ]
 }
 
