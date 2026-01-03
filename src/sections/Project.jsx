@@ -147,21 +147,16 @@ function Projects() {
               </ModalSection>
 
               {selectedProject.github && (
-                <ModalSection>
-                  <a 
-                    href={selectedProject.github} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    style={{ 
-                      color: '#646cff', 
-                      textDecoration: 'none',
-                      fontWeight: '500',
-                      fontFamily: 'system-ui, -apple-system, sans-serif'
-                    }}
-                  >
-                    GitHub 링크 →
-                  </a>
-                </ModalSection>
+                <ModalGitHubButton 
+                  href={selectedProject.github} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  title="GitHub 링크"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </ModalGitHubButton>
               )}
             </>
           )}
@@ -205,7 +200,7 @@ const SectionSubtitle = styled.p`
   font-size: 18px;
   color: #2B2A2A;
   text-align: center;
-  margin: 0 0 60px 0;
+  margin: 0 0 30px 0;
 `;
 
 
@@ -247,34 +242,6 @@ const CategoryButton = styled.button`
   }
 `;
 
-// const CategoryFilter = styled.div`
-//   display: flex;
-//   justify-content: center;
-//   gap: 12px;
-//   margin-bottom: 60px;
-//   flex-wrap: wrap;
-//   // background: white;
-//   // border-radius: 16px;
-//   // padding: 16px;
-// `;
-// const CategoryButton = styled.button`
-//   padding: 10px 24px;
-//   border-radius: 50px;
-//   border: none;
-//   font-size: 1rem;
-//   font-weight: 500;
-//   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-//   background-color: ${props => props.active ? '#5A7ACD' : 'white'};
-//   color: ${props => props.active ? '#FFFFFF' : '#7E8793'};
-//   cursor: pointer;
-//   transition: all 0.3s ease;
-
-//   &:hover {
-//     transform: translateY(-2px);
-//   }
-// `;
-
-
 const ProjectsGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -303,6 +270,10 @@ const ProjectCard = styled.div`
     transform: translateY(-5px);
     background: #5A7ACD;
     color: white;
+
+    h3, p, span {
+      color: white;
+    }
   }
 `;
 
@@ -310,11 +281,11 @@ const CardHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 `;
 
 const CardTitle = styled.h3`
-  font-size: 1.5rem;
+  font-size: 18px;
   font-weight: 700;
   color: #2B2A2A;
   margin: 0;
@@ -322,9 +293,9 @@ const CardTitle = styled.h3`
 `;
 
 const TechnologyTag = styled.span`
-  padding: 6px 12px;
+  padding: 6px 8px;
   border-radius: 20px;
-  font-size: 0.85rem;
+  font-size: 12px;
   font-weight: 500;
   background: ${props => props.bgColor || '#f0f0f0'};
   color: ${props => props.textColor || '#2B2A2A'};
@@ -332,21 +303,22 @@ const TechnologyTag = styled.span`
 `;
 
 const CardPeriod = styled.p`
-  font-size: 0.95rem;
+  font-size: 12px;
   color: #666;
-  margin: 0 0 8px 0;
+  margin: 0 0 5px 0;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 `;
 
 const CardTeamSize = styled.p`
-  font-size: 0.95rem;
+  font-size: 12px;
   color: #666;
   margin: 0 0 16px 0;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 `;
 
 const CardDescription = styled.p`
-  font-size: 1rem;
+  font-size: 15px;
+  font-weight: 500;
   color: #2B2A2A;
   line-height: 1.6;
   margin: 0 0 16px 0;
@@ -359,7 +331,7 @@ const CardAchievements = styled.div`
 
 const AchievementItem = styled.p`
   font-size: 0.9rem;
-  color: #666;
+  color: #5A7ACD;
   margin: 4px 0;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 `;
@@ -419,6 +391,7 @@ const ModalContent = styled.div`
   max-width: 800px;
   max-height: 90vh;
   overflow-y: auto;
+  overflow-x: hidden;
   position: relative;
   animation: ${props => props.isOpen ? 'slideUp' : 'none'} 0.3s ease;
   
@@ -446,7 +419,6 @@ const CloseButton = styled.button`
   width: 40px;
   height: 40px;
   border: none;
-  background: #f0f0f0;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -454,12 +426,12 @@ const CloseButton = styled.button`
   justify-content: center;
   font-size: 24px;
   color: #2B2A2A;
+  background: white;
   transition: all 0.3s ease;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   outline: none;
 
   &:hover {
-    background: #e0e0e0;
     transform: rotate(90deg);
   }
 
@@ -473,7 +445,7 @@ const CloseButton = styled.button`
 `;
 
 const ModalTitle = styled.h2`
-  font-size: 2rem;
+  font-size: 27px;
   font-weight: 700;
   color: #2B2A2A;
   margin: 0 0 24px 0;
@@ -486,18 +458,18 @@ const ModalSection = styled.div`
 `;
 
 const ModalLabel = styled.h4`
-  font-size: 1.1rem;
+  font-size: 18px;
   font-weight: 600;
   color: #2B2A2A;
-  margin: 0 0 12px 0;
+  margin: 0 0 6px 0;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 `;
 
 const ModalText = styled.p`
-  font-size: 1rem;
+  font-size: 15px;
   color: #666;
   line-height: 1.8;
-  margin: 0 0 12px 0;
+  margin: 0;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 `;
 
@@ -508,7 +480,7 @@ const ModalList = styled.ul`
 `;
 
 const ModalListItem = styled.li`
-  font-size: 1rem;
+  font-size: 15px;
   color: #666;
   line-height: 1.8;
   margin-bottom: 8px;
@@ -520,4 +492,29 @@ const ModalTags = styled.div`
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 12px;
+`;
+
+const ModalGitHubButton = styled.a`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: white;
+  color: #2B2A2A;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+  }
+
+  &:hover {
+    color: #2B2A2A;
+    transform: scale(1.1);
+  }
 `;

@@ -14,7 +14,7 @@ const fadeInUp = keyframes`
 `;
 
 const CoreCompetenciesSection = styled.div`
-  margin-top: 120px;
+  margin-top: 240px;
 `;
 
 const SectionTitle = styled.h2`

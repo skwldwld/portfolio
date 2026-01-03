@@ -46,7 +46,7 @@ const SkillsSection = styled.section`
   min-height: 100vh;
   padding: 120px 20px;
   background-color: #F5F2F2;
-  max-width: 1200px;
+  // max-width: 700px;
   margin: 0 auto;
 `;
 
@@ -66,7 +66,7 @@ const SectionSubtitle = styled.p`
 `;
 
 const CategoryContainer = styled.div`
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   opacity: 0;
   animation: ${fadeInUp} 0.8s ease-out forwards;
   animation-delay: ${props => props.delay || 0.1}s;
@@ -76,10 +76,10 @@ const CategoryContainer = styled.div`
 `;
 
 const CategoryTitle = styled.h3`
-  font-size: 1.5rem;
+  font-size: 18px;
   font-weight: 600;
   color: #2B2A2A;
-  margin: 0 0 24px 0;
+  margin: 0 0 13px 0;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   width: 100%;
   max-width: 800px;
@@ -96,18 +96,13 @@ const TagContainer = styled.div`
 `;
 
 const Tag = styled.div`
-  padding: 10px 24px;
+  padding: 5px 18px;
   border-radius: 50px;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 500;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   background-color: ${props => props.bgColor || '#e0e0e0'};
   color: ${props => props.textColor || '#2B2A2A'};
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: default;
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  }
 `;

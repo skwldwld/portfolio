@@ -24,8 +24,8 @@ function Hero() {
           김예지입니다.
         </HeroTitle>
         <HeroDescription>
-          WebGL 기반 가우시안 스플래팅과 프론트엔드 웹 개발을 합니다.<br />
-          회사와 함께 세상을 바꾸고 싶습니다.
+          WebGL 기반 디지털 트윈과 프론트엔드 웹 개발을 합니다.<br />
+          저의 기술로 더 나은 세상을 만들고 싶습니다.
         </HeroDescription>
       </HeroContent>
       <ScrollIndicator onClick={scrollToMessage}>

@@ -36,9 +36,9 @@
       "category": "Tool",
       "tags": [
         { "name": "Figma", "bgColor": "#F05032", "textColor": "#FFFFFF" },
-        { "name": "Notion", "bgColor": "#F05032", "textColor": "#FFFFFF" },
+        { "name": "Notion", "bgColor": "#F05032", "textColor": "#FFFFFF" }
       ]
-    }, 
+    }
   ],
   "technologies": {
     "JavaScript": { "bgColor": "#F7DF1E", "textColor": "#2B2A2A" },
