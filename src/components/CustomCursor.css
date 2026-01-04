@@ -1,0 +1,61 @@
+.custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #000;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              height 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              border 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  will-change: transform, width, height;
+}
+
+/* 호버 상태: 큰 빈 원 */
+.custom-cursor.hovering {
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* 클릭 상태: 작은 검은 원 */
+.custom-cursor.clicking {
+  width: 6px;
+  height: 6px;
+  background-color: #000;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* 호버와 클릭 동시에 있을 때 */
+.custom-cursor.hovering.clicking {
+  width: 36px;
+  height: 36px;
+  background-color: transparent;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* 기본 커서 숨기기 */
+* {
+  cursor: none !important;
+}
+
+/* 터치 디바이스에서는 커서 숨기지 않기 */
+@media (hover: none) and (pointer: coarse) {
+  * {
+    cursor: auto !important;
+  }
+  
+  .custom-cursor {
+    display: none;
+  }
+}
+

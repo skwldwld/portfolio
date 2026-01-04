@@ -6,10 +6,12 @@ import Experience from './sections/Experience';
 import Projects from './sections/Project';
 import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer';
+import CustomCursor from './components/CustomCursor';
 
 function App() {
   return (
     <>
+      <CustomCursor />
       <Hero />
       <Message />
       <About />
