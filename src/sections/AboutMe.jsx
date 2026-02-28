@@ -1,41 +1,43 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import styled, { keyframes } from 'styled-components';
 import profileImage from '../assets/profile.jpg';
 import personIcon from '../assets/person.svg';
 import birthdayIcon from '../assets/birthday.svg';
 import locationIcon from '../assets/home.svg';
 import graduationIcon from '../assets/school.svg';
-
-const infoData = [
-  {
-    id: 'info-1',
-    icon: personIcon,
-    value: '김예지',
-    delay: 0.2
-  },
-  {
-    id: 'info-2',
-    icon: birthdayIcon,
-    value: '2002.05.12',
-    delay: 0.3
-  },
-  {
-    id: 'info-3',
-    icon: locationIcon,
-    value: '경기도 의왕시',
-    delay: 0.4
-  },
-  {
-    id: 'info-4',
-    icon: graduationIcon,
-    value: '한동대학교\n(AI, 컴퓨터공학부)\n2022-2026 (졸업예정)',
-    delay: 0.5,
-    hasYearColor: true
-  }
-];
+import { useLanguage } from '../context/LanguageContext';
 
 function AboutMe() {
+  const { t } = useLanguage();
   const [visibleItems, setVisibleItems] = useState(new Set());
+
+  const infoData = useMemo(() => [
+    {
+      id: 'info-1',
+      icon: personIcon,
+      value: '김예지',
+      delay: 0.2
+    },
+    {
+      id: 'info-2',
+      icon: birthdayIcon,
+      value: '2002.05.12',
+      delay: 0.3
+    },
+    {
+      id: 'info-3',
+      icon: locationIcon,
+      value: t('aboutme_location'),
+      delay: 0.4
+    },
+    {
+      id: 'info-4',
+      icon: graduationIcon,
+      value: t('aboutme_school_value'),
+      delay: 0.5,
+      hasYearColor: true
+    }
+  ], [t]);
 
   useEffect(() => {
     const observerOptions = {
@@ -69,8 +71,8 @@ function AboutMe() {
 
   return (
     <AboutMeContainer>
-      <SectionTitle>About Me</SectionTitle>
-      <SectionSubtitle>저를 소개합니다.</SectionSubtitle>
+      <SectionTitle>{t('about_title')}</SectionTitle>
+      <SectionSubtitle>{t('about_subtitle')}</SectionSubtitle>
       
       <AboutContent>
         <ProfileImageContainer 
@@ -96,10 +98,10 @@ function AboutMe() {
                   {info.value.split('\n').map((line, idx, lines) => {
                     const isYearLine = info.hasYearColor && idx === lines.length - 1;
                     return (
-                      <span key={idx} style={isYearLine ? { color: '#7E8793' } : {}}>
+                      <InfoLine key={idx} $isYearLine={isYearLine}>
                         {line}
                         {idx < lines.length - 1 && <br />}
-                      </span>
+                      </InfoLine>
                     );
                   })}
                 </InfoValue>
@@ -126,7 +128,7 @@ const fadeInUp = keyframes`
 `;
 
 const AboutMeContainer = styled.div`
-  background: white;
+  background: ${({ theme }) => theme.colors.surface};
   border-radius: 20px;
   padding: 60px;
   margin-bottom: 120px;
@@ -147,7 +149,7 @@ const SectionTitle = styled.h2`
 
 const SectionSubtitle = styled.p`
   font-size: 18px;
-  color: #2B2A2A;
+  color: ${({ theme }) => theme.colors.text};
   text-align: center;
   margin: 0 0 60px 0;
 `;
@@ -221,6 +223,7 @@ const IconWrapper = styled.div`
 const Icon = styled.img`
   width: 26px;
   height: 26px;
+  filter: ${({ theme }) => (theme.mode === 'dark' ? 'invert(1) brightness(1.2)' : 'none')};
 `;
 
 const InfoContent = styled.div`
@@ -229,7 +232,11 @@ const InfoContent = styled.div`
 
 const InfoValue = styled.div`
   font-size: 16px;
-  color: #2B2A2A;
+  color: ${({ theme }) => theme.colors.text};
   font-weight: 500;
+`;
+
+const InfoLine = styled.span`
+  color: ${({ $isYearLine, theme }) => ($isYearLine ? theme.colors.muted : theme.colors.text)};
 `;
 

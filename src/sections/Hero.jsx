@@ -1,8 +1,11 @@
 import styled, { keyframes } from 'styled-components';
 import NavigationBar from '../components/NavigationBar';
 import scrollIcon from '../assets/scroll.svg';
+import { useLanguage } from '../context/LanguageContext';
 
 function Hero() {
+  const { t } = useLanguage();
+
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -19,13 +22,13 @@ function Hero() {
       <NavigationBar />
       <HeroContent>
         <HeroTitle>
-          안녕하세요<br />
-          3D 웹 개발자<br />
-          김예지입니다.
+          {t('hero_title_1')}<br />
+          {t('hero_title_2')}<br />
+          {t('hero_title_3')}
         </HeroTitle>
         <HeroDescription>
-          WebGL 기반 디지털 트윈과 프론트엔드 웹 개발을 합니다.<br />
-          저의 기술로 더 나은 세상을 만들고 싶습니다.
+          {t('hero_desc_1')}<br />
+          {t('hero_desc_2')}
         </HeroDescription>
       </HeroContent>
       <ScrollIndicator onClick={scrollToMessage}>
@@ -56,7 +59,7 @@ const HeroSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #F5F2F2;
+  background-color: ${({ theme }) => theme.colors.bg};
   padding: 0;
   overflow: hidden;
 `;
@@ -73,7 +76,7 @@ const HeroTitle = styled.h1`
   font-size: 70px;
   font-weight: 700;
   line-height: 1.2;
-  color: #2B2A2A;
+  color: ${({ theme }) => theme.colors.text};
   margin: 0 0 32px 0;
   letter-spacing: -0.02em;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
@@ -87,7 +90,7 @@ const HeroDescription = styled.p`
   font-size: 18px;
   line-height: 1.8;
   margin: 0;
-  color: #7E8793;
+  color: ${({ theme }) => theme.colors.muted};
   font-weight: 400;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 

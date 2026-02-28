@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import competenciesData from '../data/coreCompetencies.json';
+import { useLanguage } from '../context/LanguageContext';
 
 const fadeInUp = keyframes`
   from {
@@ -27,7 +28,7 @@ const SectionTitle = styled.h2`
 
 const SectionSubtitle = styled.p`
   font-size: 18px;
-  color: #2B2A2A;
+  color: ${({ theme }) => theme.colors.text};
   text-align: center;
   margin: 0 0 60px 0;
 `;
@@ -45,7 +46,7 @@ const CompetencyGrid = styled.div`
 `;
 
 const CompetencyCard = styled.div`
-  background: white;
+  background: ${({ theme }) => theme.colors.surface};
   border-radius: 20px;
   padding: 40px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -74,7 +75,7 @@ const CardIcon = styled.div`
 const CardTitle = styled.h3`
   font-size: 1.3rem;
   font-weight: 700;
-  color: #2B2A2A;
+  color: ${({ theme }) => theme.colors.text};
   margin: 0 0 16px 0;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 `;
@@ -89,6 +90,7 @@ const CardDescription = styled.p`
 `;
 
 function CoreCompetencies() {
+  const { t, getText } = useLanguage();
   const [visibleItems, setVisibleItems] = useState(new Set());
 
   useEffect(() => {
@@ -123,8 +125,8 @@ function CoreCompetencies() {
 
   return (
     <CoreCompetenciesSection>
-      <SectionTitle>Core Competencies</SectionTitle>
-      <SectionSubtitle>제가 가진 장점들입니다.</SectionSubtitle>
+      <SectionTitle>{t('core_title')}</SectionTitle>
+      <SectionSubtitle>{t('core_subtitle')}</SectionSubtitle>
       
       <CompetencyGrid>
         {competenciesData.competencies.map((competency, index) => (
@@ -135,8 +137,8 @@ function CoreCompetencies() {
             isVisible={visibleItems.has(competency.id)}
           >
             <CardIcon />
-            <CardTitle>{competency.title}</CardTitle>
-            <CardDescription>{competency.description}</CardDescription>
+            <CardTitle>{getText(competency.title)}</CardTitle>
+            <CardDescription>{getText(competency.description)}</CardDescription>
           </CompetencyCard>
         ))}
       </CompetencyGrid>

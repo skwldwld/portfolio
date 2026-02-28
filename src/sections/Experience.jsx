@@ -5,8 +5,11 @@ import likelionIcon from '../assets/likelion.svg';
 import volunteerIcon from '../assets/volunteer.svg';
 import companyIcon from '../assets/company.svg';
 import opicIcon from '../assets/opic.svg';
+import { useLanguage } from '../context/LanguageContext';
 
 function Experience() {
+  const { t, getText } = useLanguage();
+
   const getIconSrc = (iconType) => {
     switch (iconType) {
       case 'lion':
@@ -25,21 +28,24 @@ function Experience() {
   return (
     <ExperienceSection id="experience">
       <ExperienceContainer>
-        <SectionTitle>경력</SectionTitle>
-        <SectionSubtitle>저를 성장시켜준 협업과 일 경험입니다.</SectionSubtitle>
+        <SectionTitle>{t('experience_title')}</SectionTitle>
+        <SectionSubtitle>{t('experience_subtitle')}</SectionSubtitle>
         
         {experienceData.experiences.map((exp, index) => {
           const iconSrc = getIconSrc(exp.icon);
+          const title = getText(exp.title);
+          const role = getText(exp.role);
+          const description = getText(exp.description);
           return (
             <ExperienceItem key={exp.id} delay={0.1 + index * 0.1}>
               <IconWrapper>
-                {iconSrc && <img src={iconSrc} alt={exp.title} />}
+                {iconSrc && <img src={iconSrc} alt={title} />}
               </IconWrapper>
               <ContentWrapper>
-                <ItemTitle>{exp.title}</ItemTitle>
+                <ItemTitle>{title}</ItemTitle>
                 <ItemPeriod>{exp.period}</ItemPeriod>
-                <ItemRole>{exp.role}</ItemRole>
-                {exp.description && <ItemDescription>{exp.description}</ItemDescription>}
+                <ItemRole>{role}</ItemRole>
+                {description && <ItemDescription>{description}</ItemDescription>}
               </ContentWrapper>
             </ExperienceItem>
           );
@@ -47,7 +53,7 @@ function Experience() {
       </ExperienceContainer>
 
       <ExperienceContainer>
-        <SectionTitle>어학 능력</SectionTitle>
+        <SectionTitle>{t('language_title')}</SectionTitle>
         
         {experienceData.languages.map((lang) => {
           const iconSrc = getIconSrc(lang.icon);
@@ -84,7 +90,7 @@ const fadeInUp = keyframes`
 const ExperienceSection = styled.section`
   min-height: 100vh;
   padding: 120px 20px;
-  background-color: #F5F2F2;
+  background-color: ${({ theme }) => theme.colors.bg};
   max-width: 1200px;
   margin: 0 auto;
 `;
@@ -99,7 +105,7 @@ const SectionTitle = styled.h2`
 
 const SectionSubtitle = styled.p`
   font-size: 18px;
-  color: #2B2A2A;
+  color: ${({ theme }) => theme.colors.text};
   text-align: center;
   margin: 0 0 60px 0;
 `;
@@ -140,6 +146,7 @@ const IconWrapper = styled.div`
     width: 100%;
     height: 100%;
     object-fit: contain;
+    filter: ${({ theme }) => (theme.mode === 'dark' ? 'invert(1) brightness(1.2)' : 'none')};
   }
 `;
 
@@ -150,7 +157,7 @@ const ContentWrapper = styled.div`
 const ItemTitle = styled.h3`
   font-size: 1.3rem;
   font-weight: 700;
-  color: #2B2A2A;
+  color: ${({ theme }) => theme.colors.text};
   margin: 0 0 8px 0;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 `;
@@ -164,7 +171,7 @@ const ItemPeriod = styled.p`
 
 const ItemRole = styled.p`
   font-size: 1rem;
-  color: #2B2A2A;
+  color: ${({ theme }) => theme.colors.text};
   margin: 0 0 4px 0;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 `;
@@ -204,5 +211,6 @@ const LanguageIconWrapper = styled.div`
     width: 100%;
     height: 100%;
     object-fit: contain;
+    filter: ${({ theme }) => (theme.mode === 'dark' ? 'invert(1) brightness(1.2)' : 'none')};
   }
 `;

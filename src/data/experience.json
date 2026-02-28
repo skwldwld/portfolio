@@ -3,26 +3,26 @@
     {
       "id": "lion",
       "icon": "lion",
-      "title": "멋쟁이사자처럼",
+      "title": { "ko": "멋쟁이사자처럼", "en": "Like Lion" },
       "period": "24.01 - 24.07",
-      "role": "12기 프론트엔드 개발자",
-      "description": ""
+      "role": { "ko": "12기 프론트엔드 개발자", "en": "12th Frontend Developer" },
+      "description": { "ko": "", "en": "" }
     },
     {
       "id": "volunteer",
       "icon": "heart",
-      "title": "SW 교육봉사",
+      "title": { "ko": "SW 교육봉사", "en": "SW Education Volunteer" },
       "period": "24.01 - 24.07",
-      "role": "앱인벤터를 사용하여 교내 안내 어플 제작",
-      "description": "전국 프로그래밍 대회 대상 수상"
+      "role": { "ko": "앱인벤터를 사용하여 교내 안내 어플 제작", "en": "Built campus guide app using App Inventor" },
+      "description": { "ko": "전국 프로그래밍 대회 대상 수상", "en": "Grand Prize, National Programming Contest" }
     },
     {
       "id": "intern",
       "icon": "building",
-      "title": "센싱플러스",
+      "title": { "ko": "센싱플러스", "en": "Sensing Plus" },
       "period": "25.06 - 25.08",
-      "role": "3D 디지털트윈 기반 웹 개발 인턴",
-      "description": ""
+      "role": { "ko": "3D 디지털트윈 기반 웹 개발 인턴", "en": "3D Digital Twin Web Development Intern" },
+      "description": { "ko": "", "en": "" }
     }
   ],
   "languages": [
@@ -34,4 +34,3 @@
     }
   ]
 }
-

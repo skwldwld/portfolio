@@ -1,13 +1,15 @@
 import styled, { keyframes } from 'styled-components';
 import { getCategories } from '../utils/skillsUtils';
+import { useLanguage } from '../context/LanguageContext';
 
 function Skills() {
+  const { t } = useLanguage();
   const skillsData = getCategories();
 
   return (
     <SkillsSection id="skills">
-      <SectionTitle>기술 스택</SectionTitle>
-      <SectionSubtitle>제가 다룰 수 있는 기술들입니다.</SectionSubtitle>
+      <SectionTitle>{t('skills_title')}</SectionTitle>
+      <SectionSubtitle>{t('skills_subtitle')}</SectionSubtitle>
       
       {skillsData.map((category, index) => (
         <CategoryContainer key={category.category} delay={0.1 + index * 0.1}>
@@ -45,7 +47,7 @@ const fadeInUp = keyframes`
 const SkillsSection = styled.section`
   min-height: 100vh;
   padding: 120px 20px;
-  background-color: #F5F2F2;
+  background-color: ${({ theme }) => theme.colors.bg};
   // max-width: 700px;
   margin: 0 auto;
 `;
@@ -60,7 +62,7 @@ const SectionTitle = styled.h2`
 
 const SectionSubtitle = styled.p`
   font-size: 18px;
-  color: #2B2A2A;
+  color: ${({ theme }) => theme.colors.text};
   text-align: center;
   margin: 0 0 60px 0;
 `;
@@ -78,7 +80,7 @@ const CategoryContainer = styled.div`
 const CategoryTitle = styled.h3`
   font-size: 18px;
   font-weight: 600;
-  color: #2B2A2A;
+  color: ${({ theme }) => theme.colors.text};
   margin: 0 0 13px 0;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   width: 100%;
@@ -102,7 +104,7 @@ const Tag = styled.div`
   font-weight: 500;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   background-color: ${props => props.bgColor || '#e0e0e0'};
-  color: ${props => props.textColor || '#2B2A2A'};
+  color: ${({ textColor, theme }) => textColor || theme.colors.text};
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: default;
 `;

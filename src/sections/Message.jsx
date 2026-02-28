@@ -1,8 +1,16 @@
 import { useEffect, useRef } from 'react';
 import styled from 'styled-components';
+import { useLanguage } from '../context/LanguageContext';
+import resumeKo from '../resume/이력서_김예지.pdf';
+import resumeEn from '../resume/resume_yejikim.pdf';
 
 function Message() {
   const textRefs = useRef([]);
+  const { t, language } = useLanguage();
+
+  const messageKeys = ['message_1', 'message_2', 'message_3', 'message_4', 'message_5'];
+  const resumeUrl = language === 'ko' ? resumeKo : resumeEn;
+  const resumeFileName = language === 'ko' ? '이력서_김예지.pdf' : 'resume_yejikim.pdf';
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -28,24 +36,18 @@ function Message() {
   return (
     <MessageSection id="message">
       <MessageContent>
-        {[
-          '기술이 빠르게 발전함에 따라 세상은 급속도로 변하기 때문에 현실에 안주하지 않고 계속해서 배우려 합니다.',
-          '처음 접하는 낯선 문제 앞에 서더라도 두려워하기보다는 일단 시도해보려고 합니다.',
-          'Frontend, Backend 뿐만 아니라 3D 웹 개발까지 다양한 프로젝트들을 경험해왔고,',
-          '앞으로도 분야를 가리지 않고 계속해서 새로운 도전을 이어나갈 것입니다.',
-          '저의 새로운 도전에 함께해주세요.',
-        ].map((text, index) => (
+        {messageKeys.map((key, index) => (
           <MessageText
-            key={index}
+            key={key}
             ref={(el) => (textRefs.current[index] = el)}
             style={{ transitionDelay: `0.15s` }}
           >
-            {text}
+            {t(key)}
           </MessageText>
         ))}
       </MessageContent>
 
-      <DownloadButton>
+      <DownloadButton as="a" href={resumeUrl} download={resumeFileName}>
         <svg
           viewBox="0 0 24 24"
           fill="none"
@@ -58,7 +60,7 @@ function Message() {
           <polyline points="7 10 12 15 17 10" />
           <line x1="12" y1="15" x2="12" y2="3" />
         </svg>
-        이력서 다운로드
+        {t('resume_download')}
       </DownloadButton>
     </MessageSection>
   );
@@ -73,7 +75,7 @@ export default Message;
 const MessageSection = styled.section`
   min-height: 100vh;
   padding: 120px 20px;
-  background-color: #f5f2f2;
+  background-color: ${({ theme }) => theme.colors.bg};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,7 +93,7 @@ const MessageContent = styled.div`
 const MessageText = styled.p`
   font-size: 18px;
   line-height: 1.8;
-  color: #2b2a2a;
+  color: ${({ theme }) => theme.colors.text};
   margin: 0 0 8px 0;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui,
     sans-serif;
@@ -107,22 +109,23 @@ const MessageText = styled.p`
   }
 `;
 
-const DownloadButton = styled.button`
+const DownloadButton = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
   padding: 16px 32px;
-  background: white;
+  background: ${({ theme }) => theme.colors.surface};
   border: none;
   border-radius: 50px;
   font-size: 16px;
   font-weight: 500;
-  color: #2b2a2a;
+  color: ${({ theme }) => theme.colors.text};
   cursor: pointer;
   transition: transform 0.3s ease;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui,
     sans-serif;
+  text-decoration: none;
 
   &:hover {
     transform: translateY(-2px);

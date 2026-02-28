@@ -1,7 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
 import styled from 'styled-components';
+import { useLanguage } from '../context/LanguageContext';
 
 function NavigationBar() {
+  const { t } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState(null);
   const [isVisible, setIsVisible] = useState(true);
@@ -128,25 +130,25 @@ function NavigationBar() {
         onClick={() => scrollToSection('about')}
         className={activeSection === 'about' ? 'active' : ''}
       >
-        About Me
+        {t('nav_about')}
       </NavItem>
       <NavItem
         onClick={() => scrollToSection('skills')}
         className={activeSection === 'skills' ? 'active' : ''}
       >
-        기술
+        {t('nav_skills')}
       </NavItem>
       <NavItem
         onClick={() => scrollToSection('experience')}
         className={activeSection === 'experience' ? 'active' : ''}
       >
-        경력
+        {t('nav_experience')}
       </NavItem>
       <NavItem
         onClick={() => scrollToSection('projects')}
         className={activeSection === 'projects' ? 'active' : ''}
       >
-        프로젝트
+        {t('nav_projects')}
       </NavItem>
     </NavBar>
   );
@@ -162,7 +164,7 @@ const NavBar = styled.nav`
   transform: translateX(-50%);
   display: flex;
   gap: 24px;
-  background: white;
+  background: ${({ theme }) => theme.colors.surface};
   padding: 12px 32px;
   border-radius: 50px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
@@ -215,7 +217,7 @@ const NavItem = styled.button`
   padding: 8px 20px;
   font-size: 15px;
   font-weight: 600;
-  color: #7E8793;
+  color: ${({ theme }) => theme.colors.muted};
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
@@ -236,7 +238,7 @@ const NavItem = styled.button`
   }
 
   &.active {
-    color: #5A7ACD;
+    color: ${({ theme }) => theme.colors.primary};
   }
 
   @media (max-width: 768px) {

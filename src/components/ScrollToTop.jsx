@@ -8,7 +8,7 @@ const ScrollButton = styled.button`
   right: 40px;
   width: 56px;
   height: 56px;
-  background: white;
+  background: ${({ theme }) => theme.colors.surface};
   border: none;
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);

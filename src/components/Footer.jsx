@@ -2,11 +2,13 @@ import styled from 'styled-components';
 import mailIcon from '../assets/mail.svg';
 import githubIcon from '../assets/github.svg';
 import phoneIcon from '../assets/phone.svg';
+import { useLanguage } from '../context/LanguageContext';
 
 function Footer() {
+  const { t } = useLanguage();
   return (
     <FooterContainer id="contact">
-      <FooterTitle>Contact me</FooterTitle>
+      <FooterTitle>{t('footer_contact')}</FooterTitle>
       <IconContainer>
         <IconLink href="mailto:yezi0512@naver.com" aria-label="Email">
           <img src={mailIcon} alt="Email" />
@@ -18,7 +20,7 @@ function Footer() {
           <img src={phoneIcon} alt="Phone" />
         </IconLink>
       </IconContainer>
-      <Copyright>© 2026 YejiKim. All Rights Reserved.</Copyright>
+      <Copyright>{t('footer_copyright')}</Copyright>
     </FooterContainer>
   );
 }
@@ -28,7 +30,7 @@ export default Footer;
 const FooterContainer = styled.section`
   min-height: 30vh;
   padding: 80px 20px 40px;
-  background-color: white;
+  background-color: ${({ theme }) => theme.colors.surface};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,7 +40,7 @@ const FooterContainer = styled.section`
 const FooterTitle = styled.h2`
   font-size: 25px;
   font-weight: 700;
-  color: #2B2A2A;
+  color: ${({ theme }) => theme.colors.text};
   text-align: center;
   margin: 0 0 30px 0;
 `;
@@ -75,7 +77,7 @@ const IconLink = styled.a`
 
 const Copyright = styled.p`
   font-size: 14px;
-  color: #2B2A2A;
+  color: ${({ theme }) => theme.colors.text};
   text-align: center;
   margin: 0;
 `;
