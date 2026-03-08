@@ -6,7 +6,7 @@
       "category": "멋쟁이사자처럼",
       "period": "2024.03 - 2024.07",
       "teamSize": { "ko": "4명 (PD 1, FE 2, BE 1)", "en": "4 (PD 1, FE 2, BE 1)" },
-      "technologies": ["React", "Figma"],
+      "technologies": ["React", "Figma", "Notion"],
       "description": { "ko": "매운 음식을 좋아하는 사람들을 위한 매운 맛 지도.", "en": "Spicy food map for people who love spicy food." },
       "achievements": [
         { "ko": "멋쟁이사자처럼 해커톤 대상 수상", "en": "Grand Prize, Like Lion Hackathon" },
@@ -26,7 +26,7 @@
       "category": "멋쟁이사자처럼",
       "period": "2024.07 - 2024.08",
       "teamSize": { "ko": "6명 (PM 1, PD 1, FE 2, BE 1)", "en": "6 (PM 1, PD 1, FE 2, BE 1)" },
-      "technologies": ["React", "Figma"],
+      "technologies": ["React", "Figma", "Notion"],
       "description": { "ko": "장애인을 위한 스포츠 강좌 선택 수강 플랫폼.", "en": "Sports course platform for people with disabilities." },
       "achievements": [],
       "details": [
@@ -35,6 +35,20 @@
         { "ko": "강사의 프로필에서 취득한 장애인 교육 관련 자격증, 강좌 개설 내역 등을 확인할 수 있어 안심하고 운동에 집중할 수 있습니다.", "en": "Instructor profiles show certifications and course history for peace of mind." }
       ],
       "github": "https://github.com/LikeLionHGU/Pickle-Front-2024"
+    },
+    {
+      "id": "makeus",
+      "title": "MakeUs",
+      "category": "멋쟁이사자처럼",
+      "period": "2024.01 - 2024.01",
+      "teamSize": { "ko": "5명 (PD 1, FE 2, BE 2)", "en": "5 (PD 1, FE 2, BE 2)" },
+      "technologies": ["React", "Figma", "Notion"],
+      "description": { "ko": "화알못들을 위한 화장품 추천 플랫폼.", "en": "MakeUp recommendation platform for people who don't know makeup." },
+      "achievements": [],
+      "details": [
+        { "ko": "화장법과 화장품을 추천해주는 플랫폼입니다.", "en": "A platform that recommends makeup and makeup techniques." }
+      ],
+      "github": "https://github.com/LikeLionHGU/MakeUs"
     },
     {
       "id": "partybread",

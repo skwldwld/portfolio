@@ -2,18 +2,23 @@
   "competencies": [
     {
       "id": "competency-1",
+      "icon": "communication",
       "title": { "ko": "커뮤니케이션 및 협업", "en": "Communication & Collaboration" },
       "description": { "ko": "사람을 끌어들이는 힘을 가지고 있습니다.\n팀원들과 활발하게 소통하고 협력하며, 다른 사람의 의견을 존중합니다.", "en": "I have a natural ability to bring people together.\nI communicate and collaborate actively with teammates and respect others' opinions." }
     },
     {
       "id": "competency-2",
-      "title": { "ko": "창의력", "en": "Creativity" },
-      "description": { "ko": "재밌고 새로운 아이디어를 많이 내 주변에서 저를 '아이디어 뱅크'라고 부릅니다.\n문제가 발생했을 때 새로운 접근법으로 해결할 수 있습니다.", "en": "I come up with many fun and new ideas—people call me an 'idea bank'.\nWhen problems arise, I can solve them with fresh approaches." }
+      "icon": "ethics",
+      "title": { "ko": "윤리 의식", "en": "Ethical Awareness" },
+      "description": { "ko": "주어진 사회적 역할과 책임을 잘 지켜 법 없이도 살 수 있는 사람이라는 이야기를 많이 듣습니다.\n공동의 이익을 추구하고, 잔꾀를 부리지 않으며 매사에 성실하고 근면한 자세로 업무에 입합니다.", 
+      "en": "I have an ethical awareness and make correct decisions.\nI pursue common interests, avoid cutting corners, and approach work with diligence and honesty." }
     },
     {
       "id": "competency-3",
-      "title": { "ko": "정직성", "en": "Integrity" },
-      "description": { "ko": "정직하고 신뢰할 수 있는 태도를 유지합니다.\n잔꾀를 부리지 않으며 불리하더라도 진실을 말하고 행동하려고 노력합니다.", "en": "I maintain an honest and trustworthy attitude.\nI don't cut corners and strive to speak and act truthfully even when it's not to my advantage." }
+      "icon": "detail",
+      "title": { "ko": "꼼꼼함", "en": "Attention to Detail" },
+      "description": { "ko": "한 가지 일을 하더라도 더블체크를 습관화하기 때문에 실수가 적습니다.\n처음에는 일의 진행이 더딜 수 있으나, 일이 손에 익고 나면 속도가 붙을 뿐더러, 창의적인 의견을 내거나 시키지 않은 일까지도 할 수 있습니다.", 
+      "en": "I habitually double-check tasks, so I make fewer mistakes. Initially, it may slow down progress, but once I get used to it, I can speed up and even do tasks I wasn't assigned." }
     }
   ]
 }

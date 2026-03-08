@@ -4,7 +4,7 @@ const GlobalStyle = createGlobalStyle`
   :root {
     color-scheme: ${({ theme }) => theme.mode};
     --cursor-fill: ${({ theme }) => (theme.mode === 'dark' ? theme.colors.text : '#000000a7')};
-    --cursor-border: ${({ theme }) => (theme.mode === 'dark' ? theme.colors.text : '#000000')};
+    --cursor-border: ${({ theme }) => (theme.mode === 'dark' ? theme.colors.text : '#2B2A2A')};
   }
 
   body {
@@ -19,4 +19,3 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 export default GlobalStyle;
-

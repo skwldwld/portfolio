@@ -3,6 +3,16 @@ import styled, { keyframes } from 'styled-components';
 import competenciesData from '../data/coreCompetencies.json';
 import { useLanguage } from '../context/LanguageContext';
 
+import communicationIcon from '../assets/communication.svg';
+import ethicsIcon from '../assets/ethics.svg';
+import detailIcon from '../assets/detail.svg';
+
+const iconMap = {
+  communication: communicationIcon,
+  ethics: ethicsIcon,
+  detail: detailIcon
+};
+
 const fadeInUp = keyframes`
   from {
     opacity: 0;
@@ -61,15 +71,12 @@ const CompetencyCard = styled.div`
   }
 `;
 
-const CardIcon = styled.div`
+const CardIcon = styled.img`
   width: 120px;
   height: 120px;
-  background: #f8f9fa;
-  border-radius: 16px;
   margin-bottom: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  margin: 0 auto 24px auto;
 `;
 
 const CardTitle = styled.h3`
@@ -136,7 +143,7 @@ function CoreCompetencies() {
             delay={0.1 + index * 0.1}
             isVisible={visibleItems.has(competency.id)}
           >
-            <CardIcon />
+            <CardIcon src={iconMap[competency.icon]} />
             <CardTitle>{getText(competency.title)}</CardTitle>
             <CardDescription>{getText(competency.description)}</CardDescription>
           </CompetencyCard>
