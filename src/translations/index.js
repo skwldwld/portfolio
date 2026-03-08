@@ -1,13 +1,16 @@
-/**
- * 멘트별로 { ko, en } 형태로 묶어두고, 언어 모드에 따라 사용합니다.
- */
 export const translations = {
   // Hero
   hero_title_1: { ko: '안녕하세요', en: 'Hello' },
-  hero_title_2: { ko: '3D 웹 개발자', en: '3D Web Developer' },
-  hero_title_3: { ko: '김예지입니다.', en: "I'm Yeji Kim." },
-  hero_desc_1: { ko: 'WebGL 기반 디지털 트윈과 프론트엔드 웹 개발을 합니다.', en: 'I work on WebGL-based digital twins and frontend web development.' },
-  hero_desc_2: { ko: '저의 기술로 더 나은 세상을 만들고 싶습니다.', en: 'I want to build a better world with my skills.' },
+  hero_title_2: { ko: '3D 웹 개발자,', en: "I'm Yeji Kim," },
+  hero_title_3: { ko: '김예지입니다.', en:  'a 3D Web Developer.'},
+  hero_desc_1: { 
+    ko: 'WebGL 기반 디지털 트윈과 프론트엔드 웹 개발을 합니다.', 
+    en: 'I build WebGL-based digital twins and develop front-end web applications.' 
+  },
+  hero_desc_2: { 
+    ko: '저의 기술로 더 나은 세상을 만들고 싶습니다.', 
+    en: 'My goal is to use technology to make the world a better place.' 
+  },
 
   // Navigation
   nav_about: { ko: 'About Me', en: 'About Me' },
@@ -16,11 +19,26 @@ export const translations = {
   nav_projects: { ko: '프로젝트', en: 'Projects' },
 
   // Message
-  message_1: { ko: '기술이 빠르게 발전함에 따라 세상은 급속도로 변하기 때문에 현실에 안주하지 않고 계속해서 배우려 합니다.', en: 'As technology advances rapidly, the world is changing at a fast pace, so I strive to keep learning without resting on my laurels.' },
-  message_2: { ko: '처음 접하는 낯선 문제 앞에 서더라도 두려워하기보다는 일단 시도해보려고 합니다.', en: 'Even when facing unfamiliar problems, I try to give it a shot rather than shy away.' },
-  message_3: { ko: 'Frontend, Backend 뿐만 아니라 3D 웹 개발까지 다양한 프로젝트들을 경험해왔고,', en: 'I have experience in Frontend, Backend, and 3D web development,' },
-  message_4: { ko: '앞으로도 분야를 가리지 않고 계속해서 새로운 도전을 이어나갈 것입니다.', en: 'and I will continue to take on new challenges across all fields.' },
-  message_5: { ko: '저의 새로운 도전에 함께해주세요.', en: 'Join me on my next challenge.' },
+  message_1: { 
+    ko: '기술이 빠르게 발전함에 따라 세상은 급속도로 변하기 때문에 현실에 안주하지 않고 계속해서 배우려 합니다.', 
+    en: 'As technology evolves rapidly, I strive to keep learning and growing rather than staying comfortable.' 
+  },
+  message_2: { 
+    ko: '처음 접하는 낯선 문제 앞에 서더라도 두려워하기보다는 일단 시도해보려고 합니다.', 
+    en: 'When facing unfamiliar challenges, I prefer to try and explore rather than hesitate.'
+  },
+  message_3: { 
+    ko: 'Frontend, Backend 뿐만 아니라 3D 웹 개발까지 다양한 프로젝트들을 경험해왔고,', 
+    en: 'I have worked on a variety of projects across front-end, back-end, and 3D web development,'
+  },
+  message_4: { 
+    ko: '앞으로도 분야를 가리지 않고 계속해서 새로운 도전을 이어나갈 것입니다.', 
+    en: 'and I will continue to take on new challenges and expand my skills across different fields.' 
+  },
+  message_5: { 
+    ko: '저의 새로운 도전에 함께해주세요.', 
+    en: 'Join me on my journey of new challenges.' 
+  },
   resume_download: { ko: '이력서 다운로드', en: 'Download Resume' },
 
   // About
@@ -29,18 +47,21 @@ export const translations = {
   core_title: { ko: 'Core Competencies', en: 'Core Competencies' },
   core_subtitle: { ko: '제가 가진 장점들입니다.', en: 'Here are my strengths.' },
 
-  // AboutMe info (name, location, school etc. - value can be object in component)
+  // AboutMe info
   aboutme_school_value: { ko: '한동대학교\n(AI, 컴퓨터공학부)\n2022-2026 (졸업예정)', en: 'Handong Global University\n(AI, School of Computer Science)\n2022-2026 (Expected)' },
   aboutme_location: { ko: '경기도 의왕시', en: 'Uiwang-si, Gyeonggi-do' },
 
   // Skills
   skills_title: { ko: '기술 스택', en: 'Skills' },
-  skills_subtitle: { ko: '제가 다룰 수 있는 기술들입니다.', en: 'Technologies I work with.' },
+  skills_subtitle: { ko: '제가 다룰 수 있는 기술들입니다.', en: 'Technologies and tools I use.' },
 
   // Experience
   experience_title: { ko: '경력', en: 'Experience' },
-  experience_subtitle: { ko: '저를 성장시켜준 협업과 일 경험입니다.', en: 'Collaboration and work experiences that shaped me.' },
-  language_title: { ko: '어학 능력', en: 'Language' },
+  experience_subtitle: { 
+    ko: '저를 성장시켜준 협업과 일 경험입니다.', 
+    en: 'Work and collaboration experiences that helped me grow.' 
+  },
+  language_title: { ko: '자격증', en: 'Certifications' },
 
   // Projects
   projects_title: { ko: '프로젝트', en: 'Projects' },
