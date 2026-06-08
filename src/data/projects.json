@@ -12,11 +12,16 @@
         { "ko": "멋쟁이사자처럼 해커톤 대상 수상", "en": "Grand Prize, Like Lion Hackathon" },
         { "ko": "교내 sw 개발 경진대회 우수상 수상", "en": "Excellence Award, University SW Development Contest" }
       ],
+      "papers": [],
       "details": [
-        { "ko": "맵기레벨 테스트(매운 음식을 얼마나 잘 먹는지) 결과를 바탕으로 맵기 레벨이 정해집니다.", "en": "Spice level is determined based on the spice level test results." },
-        { "ko": "각자의 맵기 레벨에 맞는 매운 음식 맛집을 추천받을 수 있습니다.", "en": "Users can get restaurant recommendations that match their spice level." },
-        { "ko": "카카오맵 기반 맛집 검색 및 매운 정도에 대한 리뷰(불점)를 남길 수도 있습니다.", "en": "Kakao Map-based restaurant search and spice level reviews." },
-        { "ko": "기획자 부재의 상황에서 디자이너, 개발자가 적극적으로 의견을 제시하고, 서로를 응원하며 만들어낸 값진 프로젝트입니다.", "en": "A valuable project built by designers and developers who actively shared ideas and supported each other." }
+        { "ko": "맵기레벨 테스트(매운 음식을 얼마나 잘 먹는지) 결과를 바탕으로 맵기 레벨이 1~4레벨로 정해집니다.", 
+          "en": "Spice level is determined based on the spice level test results." },
+        { "ko": "카카오맵 기반 맛집 검색 및 매운 정도에 대한 리뷰(불점)를 남길 수 있습니다.",
+          "en": "Kakao Map-based restaurant search and spice level reviews." },
+        { "ko": "다른 사람들이 남긴 불점을 기반으로 각자의 맵기 레벨에 맞는 매운 음식 맛집을 추천받을 수 있습니다.", 
+          "en": "Users can get restaurant recommendations that match their spice level." },
+        { "ko": "초반 기획 단계에서 기획자가 이탈한 상황에서 디자이너와 개발자가 적극적으로 의견을 제시하였으며, 서로의 의견을 조율하며 프로젝트를 체계적으로 진행하는 방법에 대해 배울 수 있었습니다.", 
+          "en": "A valuable project built by designers and developers who actively shared ideas and supported each other." }
       ],
       "github": "https://github.com/LikeLionHGU/Hot_Front"
     },
@@ -27,12 +32,18 @@
       "period": "2024.07 - 2024.08",
       "teamSize": { "ko": "6명 (PM 1, PD 1, FE 2, BE 1)", "en": "6 (PM 1, PD 1, FE 2, BE 1)" },
       "technologies": ["React", "Figma", "Notion"],
-      "description": { "ko": "장애인을 위한 스포츠 강좌 선택 수강 플랫폼.", "en": "Sports course platform for people with disabilities." },
+      "description": { "ko": "장애인을 위한 스포츠 강좌 수강 플랫폼.", "en": "Sports course platform for people with disabilities." },
       "achievements": [],
+      "papers": [],
       "details": [
-        { "ko": "장애인들도 운동 기회를 침해받지 않도록 장애인에게만 포커스를 맞춘 스포츠 강좌 수강 플랫폼입니다.", "en": "A sports course platform focused on ensuring equal access for people with disabilities." },
-        { "ko": "지역, 운동 종목, 장애 유형 등 항목별로 상세한 필터링을 통해 맞춤형 스포츠 강좌를 더 수월하게 찾을 수 있습니다.", "en": "Detailed filtering by region, sport, and disability type helps find suitable courses." },
-        { "ko": "강사의 프로필에서 취득한 장애인 교육 관련 자격증, 강좌 개설 내역 등을 확인할 수 있어 안심하고 운동에 집중할 수 있습니다.", "en": "Instructor profiles show certifications and course history for peace of mind." }
+        { "ko": "장애인들도 운동 기회를 침해받지 않도록 장애인에게만 집중한 스포츠 강좌 수강 플랫폼입니다.", 
+          "en": "A sports course platform focused on ensuring equal access for people with disabilities." },
+        { "ko": "지역, 운동 종목, 장애 유형 등 항목별로 상세한 필터링을 통해 개인 맞춤형 스포츠 강좌를 더 수월하게 찾을 수 있습니다.", 
+          "en": "Detailed filtering by region, sport, and disability type helps find suitable courses." },
+        { "ko": "강사의 프로필 페이지에서 해당 강사가 취득한 장애인 교육 관련 자격증, 강좌 개설 내역 등을 확인할 수 있어 안심하고 운동에 집중할 수 있습니다.", 
+          "en": "Instructor profiles show certifications and course history for peace of mind." },
+        { "ko": "플랫폼 특성상 필터링이 구체적으로 들어가야 해서 필터 기능을 개발할 때 어려움을 겪었으나, 헷갈리는 부분이 있을 때마다 기획자, 디자이너와의 소통을 통해 기능을 기한 내에 완벽하게 구현할 수 있었습니다.", 
+          "en": "Filtering functionality was challenging but successfully completed." }
       ],
       "github": "https://github.com/LikeLionHGU/Pickle-Front-2024"
     },
@@ -45,10 +56,36 @@
       "technologies": ["React", "Figma", "Notion"],
       "description": { "ko": "화알못들을 위한 화장품 추천 플랫폼.", "en": "MakeUp recommendation platform for people who don't know makeup." },
       "achievements": [],
+      "papers": [],
       "details": [
-        { "ko": "화장법과 화장품을 추천해주는 플랫폼입니다.", "en": "A platform that recommends makeup and makeup techniques." }
+        { "ko": "화장을 처음 배우거나 화장을 잘 하지 못하는 화알못들을 위해 화장법을 공유하고 화장품을 추천해주는 플랫폼입니다.", 
+          "en": "A platform that recommends makeup and makeup techniques." },
+        { "ko": "멘토와 멘티로 나뉘어, 멘토는 자신의 화장법이나 화장품을 공유하는 글을 올리고, 멘티는 마음에 드는 게시글을 보고 채팅을 요청하는 메이크업 전용 SNS 형식입니다.", 
+          "en": "Mentors and mentees are divided, with mentors sharing their makeup techniques and products, and mentees chatting with mentors for detailed learning." },
+        { "ko": "멘토가 가능한 날짜를 캘린더에 표시해두면, 이를 확인하고 멘티가 원하는 날짜를 골라 해당 날짜에 1대1 채팅을 통하여 메이크업 수업을 받을 수 있습니다.", 
+          "en": "Mentors can display available dates on a calendar, allowing mentees to select a date for one-on-one makeup lessons." },
+        { "ko": "백엔드 개발자와 초반 API 명세 설계 이후로는 진행 상황을 구체적으로 공유하지 않았는데, API 연결을 하기로 한 날 백엔드 코드 구조상의 문제를 발견하여 어려움을 겪었습니다. 이 경험을 통하여 같은 프론트엔드 개발자 간의 소통 뿐만 아니라 다른 파트와의 소통도 중요하다는 것을 깨닫고 이후 프로젝트에서는 더 상세한 소통을 위하여 노력하였습니다.", 
+          "en": "Due to a lack of specific communication about the progress after the initial API specification design with the backend developer, we encountered difficulties when connecting the API. This experience taught us the importance of communication not only among frontend developers but also with other teams, and we made efforts to improve communication in subsequent projects." }
       ],
       "github": "https://github.com/LikeLionHGU/MakeUs"
+    },
+    {
+      "id": "frontend",
+      "title": "frontend",
+      "category": "멋쟁이사자처럼",
+      "period": "2023.12 - 2023.12",
+      "teamSize": { "ko": "10명 (FE)", "en": "10 (FE)" },
+      "technologies": ["React", "Figma", "Notion"],
+      "description": { "ko": "멋쟁이사자처럼 12기 프론트엔드 소개 페이지.", "en": "Frontend introduction page for LikeLion 12th generation." },
+      "achievements": [],
+      "papers": [],
+      "details": [
+        { "ko": "멋쟁이사자처럼에서 프론트엔드 개발에 대한 전반적인 지식을 습득한 후 처음으로 만든 구성원 소개 페이지입니다.", 
+          "en": "Introduction page for LikeLion 12th generation, created after gaining frontend development knowledge." },
+        { "ko": "저는 배너 부분을 맡아서 개발하였으며, 배너가 넘어갈 때 자연스럽게 페이드인아웃 되도록 시각효과에 신경을 썼습니다.", 
+          "en": "I developed the banner section. I paid attention to visual effects to make the banner transition smoothly." }
+      ],
+      "github": "https://github.com/skwldwld/12th-frontend"
     },
     {
       "id": "partybread",
@@ -59,10 +96,16 @@
       "technologies": ["Dart", "Firebase", "Figma"],
       "description": { "ko": "팟(파티원)을 찾는 어플리케이션.", "en": "App for finding party members to share orders with." },
       "achievements": [],
+      "papers": [],
       "details": [
-        { "ko": "배달, 택시, 공동구매 등 혼자서 하기에는 애매할 때, 함께할 파티원을 구하는 것을 도와주는 어플입니다.", "en": "Helps find party members for delivery, taxi, group purchases, etc." },
-        { "ko": "팟 구성원들끼리의 채팅 기능, 영수증 스캔을 통한 정산 기능을 통해 사용자의 편리성을 더해주었습니다.", "en": "In-app chat and receipt-scan settlement for convenience." },
-        { "ko": "개발자 세 명이 디자인부터 프론트엔드, 백엔드까지 모두 개발하였다는 점에서 의미가 있습니다.", "en": "Developed end-to-end by three developers (design, frontend, backend)." }
+        { "ko": "배달, 택시, 공동구매 등 혼자서 하기에는 애매할 때, 함께 할 파티원을 구하는 것을 도와주는 어플입니다.", 
+          "en": "Helps find party members for delivery, taxi, group purchases, etc." },
+        { "ko": "팟 구성원들끼리의 채팅 기능, 영수증 스캔을 통한 정산 기능을 통해 사용자의 편리성을 더해주었습니다.", 
+          "en": "In-app chat and receipt-scan settlement for convenience." },
+        { "ko": "저는 채팅과 OCR API 기능을 활용한 영수증 스캔 및 정산 기능을 개발하였으며, Figma를 활용하여 프로토타입과 UI 디자인을 제작하였습니다.", 
+          "en": "I developed the chat and receipt-scan settlement features using OCR API, and created prototypes and UI designs with Figma." },
+        { "ko": "디자인부터 프론트엔드, 백엔드까지 모두 개발하여 더욱 폭넓은 프로젝트 경험을 쌓을 수 있었습니다.", 
+          "en": "Developed end-to-end by three developers (design, frontend, backend)." }
       ],
       "github": "https://github.com/hwan129/party_bread"
     },
@@ -75,10 +118,20 @@
       "technologies": ["JavaScript", "Three.js", "Cannon.js"],
       "description": { "ko": "예측 불가 농구 게임.", "en": "Unpredictable basketball game." },
       "achievements": [],
+      "papers": [],
       "details": [
-        { "ko": "다양한 종류의 공(방울토마토, 눈덩이, 볼링공 등)을 랜덤으로 배정 받아 농구 골대에 던지는 게임입니다.", "en": "Players are randomly assigned different balls (cherry tomato, snowball, bowling ball, etc.) to shoot." },
-        { "ko": "물리 엔진을 사용해 공의 종류별로 각각의 특성에 맞게 질량과 충돌 시 반응(터져서 충돌면에 붙는 등)을 다르게 설정하였습니다.", "en": "Physics engine with different mass and collision behavior per ball type." },
-        { "ko": "친구들과 내기를 할 때 재미 요소로 사용하기 좋은 게임입니다.", "en": "A fun game for bets with friends." }
+        { "ko": "컴퓨터 그래픽스 수업의 학기말 프로젝트로 개발한 농구 게임입니다. 재미있는 아이디어를 찾기 위하여 한 달 동안 아이디어를 정리하였습니다.", 
+          "en": "A basketball game developed as a semester-end project for Computer Graphics course. I spent a month collecting interesting ideas." },
+        { "ko": "친구들과 내기를 할 때 재미 요소로 사용하기 좋은 게임의 필요성을 느껴 개발하게 되었습니다.", 
+          "en": "I developed this game to address the need for a fun game for bets with friends." },
+        { "ko": "다양한 종류의 공(방울토마토, 눈덩이, 볼링공 등)을 각각 랜덤으로 배정 받아 농구 골대에 던져 점수를 얻는 게임입니다.", 
+          "en": "Players are randomly assigned different balls (cherry tomato, snowball, bowling ball, etc.) to shoot." },
+        { "ko": "Three.js의 물리 엔진을 사용해 공의 종류별로 각각의 특성에 맞게 질량과 충돌 시 반응(터져서 충돌면에 붙는 등)을 다르게 설정하였습니다.", 
+          "en": "Physics engine with different mass and collision behavior per ball type." },
+        { 
+          "ko": "프로젝트 발표 날 플레이해본 교수님과 학우들에게 아이디어가 신박하고 재미있다는 피드백을 받았으며, 60여명에게 투표를 받았습니다.", 
+          "en": "Received feedback that the idea was novel and fun from professors and classmates who played it during the project presentation, and received votes from over 60 people." 
+        }
       ],
       "github": "https://github.com/skwldwld/Basketball"
     },
@@ -91,8 +144,20 @@
       "technologies": ["React", "Figma"],
       "description": { "ko": "포트폴리오.", "en": "Portfolio." },
       "achievements": [],
+      "papers": [],
       "details": [
-        { "ko": "학력이나 경력 사항, 진행했던 프로젝트 등 저의 포트폴리오를 정리했습니다.", "en": "A summary of my education, experience, and projects." }
+        { 
+          "ko": "학력이나 경력 사항, 지금까지 진행했던 프로젝트 등 저의 포트폴리오를 웹 형식으로 정리하였습니다.", 
+          "en": "A summary of my education, experience, and projects." 
+        },
+        {
+          "ko": "Figma를 이용하여 직접 디자인한 후 개발하였으며, github.io를 이용하여 배포까지 완료하였습니다.", 
+          "en": "Designed and developed the website using Figma, and deployed it using github.io."
+        },
+        {
+          "ko": "앞으로도 멈추지 않고 성장하여 계속해서 이 포트폴리오를 채워나갈 예정입니다.",
+          "en": "I will continue to grow and keep updating this portfolio."
+        }
       ],
       "github": "https://github.com/skwldwld/portfolio"
     },
@@ -104,14 +169,28 @@
       "teamSize": { "ko": "4명", "en": "4" },
       "technologies": ["Three.js", "Python", "React", "Supabase"],
       "description": { "ko": "가우시안 스플래팅 모델 기반 3D 로봇 관제 시스템.", "en": "3D robot control system based on Gaussian splatting model." },
-      "achievements": [
-        { "ko": "HCI 2025 논문 게재", "en": "Paper published at HCI 2025" },
-        { "ko": "한국정보과학회(KCC 2025) 논문 게재", "en": "Paper published at KCC 2025" }
+      "achievements": [],
+      "papers": [
+        { "ko": "HCI 2025 - 가우시안 스플래팅을 활용한 실내 로봇 안내 시스템 ", "en": "Paper published at HCI 2025" },
+        { "ko": "한국정보과학회(KCC 2025) - 웹페이지 렌더링을 위한 가우시안 스플래팅 모델의 경량화, 품질 향상 및 모델 조작 최적화 기법 연구", "en": "Paper published at KCC 2025" }
       ],
       "details": [
-        { "ko": "3D 모델과 로봇 맵 상의 좌표계를 일치시켜 웹상에서 로봇을 관제할 수 있습니다.", "en": "Unified coordinate system for 3D model and robot map enables web-based control." },
-        { "ko": "가우시안 스플래팅 모델의 퀄리티를 유지하며 모델의 크기를 경량화하여 웹 상에 업로드하기에 적절하도록 만들었습니다.", "en": "Lightweight Gaussian splatting model for web deployment while preserving quality." },
-        { "ko": "저는 가우시안 스플래팅 모델 내에서의 이동 기능 구현, 충돌 감지 등 사용자 인터렉션과 웹 구현 부분을 맡았습니다.", "en": "I implemented movement, collision detection, and web frontend for user interaction." }
+        { 
+          "ko": "디지털 트윈 플랫폼 구현 시 기존에 사용하던 3D 메쉬는 데이터의 크기가 너무 커서 렌더링 시간이 오래 걸린다는 문제를 해결하기 위하여 가우시안 스플래팅 모델을 활용하였습니다.", 
+          "en": "To address the issue of long rendering times due to large 3D mesh data in digital twin platforms, we utilized a Gaussian splatting model." 
+        },
+        { 
+          "ko": "연구실의 로봇 자율주행 팀으로부터 로봇의 데이터를 받아온 후 3D 가우시안 스플래팅 모델과 2D 로봇 맵 상의 좌표계를 일치시켰으며, 웹상에서 로봇을 제어 및 관제할 수 있도록 시스템을 구축하였습니다.", 
+          "en": "We built a system that receives data from the autonomous driving team of our lab, aligns the coordinate systems of the 3D Gaussian splatting model and the 2D robot map, and allows for control and monitoring of the robot on the web." 
+        },
+        { 
+          "ko": "가우시안 스플래팅 모델이 메쉬보다는 가볍지만 웹상에 렌더링할 때에는 여전히 무겁다는 문제가 있었기 때문에 모델의 퀄리티는 유지하면서 모델의 크기를 경량화하여 웹 상에 업로드할 수 있도록 모델을 구역별로 분리하여 업로드하였습니다.", 
+          "en": "We separated the model into regions and optimized its size while maintaining quality for web deployment." 
+        },
+        { 
+          "ko": "저는 관제 웹 프론트엔드 개발과 가우시안 스플래팅 모델 내에서의 이동 기능 구현, 충돌 감지 등 사용자 인터렉션 부분을 맡았습니다.", 
+          "en": "I was responsible for implementing the control web interface, movement functionality within the Gaussian splatting model, and user interaction features such as collision detection." 
+        }
       ],
       "github": "https://github.com/Digital-Twin-CGV/GaussianSplattingforweb"
     },
@@ -123,30 +202,73 @@
       "teamSize": { "ko": "2명", "en": "2" },
       "technologies": ["Python", "Unity"],
       "description": { "ko": "포스트 캡스톤.", "en": "Post-capstone research." },
-      "achievements": [
-        { "ko": "IEEE VR 논문 게재", "en": "Paper published at IEEE VR" }
+      "achievements": [],
+      "papers": [
+        { "ko": "IEEE VR 논문 - Floor Flattening of Image-Based 3D Reconstruction for Mobile Robots", "en": "Paper published at IEEE VR" }
       ],
       "details": [
-        { "ko": "캡스톤 프로젝트 이후 가우시안 스플래팅 성능에 집중하여 더 연구하고 싶은 사람들만 모여서 진행하였습니다.", "en": "Follow-up research on Gaussian splatting after the capstone project." },
-        { "ko": "3D 로봇 시뮬레이터 제작 시 가우시안 스플래팅 모델의 특성상 바닥이나 공중에 플로터들이 떠다니는 문제가 있었습니다.", "en": "Floaters in Gaussian splatting caused floating artifacts on floor and in air in the simulator." },
-        { "ko": "그 문제를 해결하기 위하여 YOLO, RANSAC 등의 알고리즘을 사용하여 바닥면을 추정하고, 해당 바닥 주변의 플로터들은 추정한 평면에 직교투영합니다.", "en": "YOLO and RANSAC used to estimate floor plane; floaters projected onto the plane." },
-        { "ko": "그 결과물로 Mesh를 제작한 후 Unity에 업로드합니다.", "en": "Resulting mesh is exported to Unity." },
-        { "ko": "Unity 상에서 시각화 렌더링은 가우시안 스플래팅 모델을, 로봇 시뮬레이션 진행 시 충돌 감지를 위해 평평하게 만들어진 물리용 바닥 Mesh를 합칩니다.", "en": "Unity combines Gaussian splatting for visualization with flat physics mesh for collision detection." }
+        { 
+          "ko": "캡스톤 프로젝트 이후 가우시안 스플래팅의 성능 향상에 집중하여 추가로 연구하고 싶은 사람들만 모여서 진행한 캡스톤 프로젝트의 후속 프로젝트입니다.", 
+          "en": "Follow-up research on Gaussian splatting after the capstone project." 
+        },
+        { 
+          "ko": "3D 로봇 시뮬레이터 제작 시 가우시안 스플래팅 모델의 특성상 바닥이나 공중에 플로터들이 떠다니는 문제가 있어 로봇이 시뮬레이터 상에서 이동 시 플로터에 걸려서 이동이 원활하지 않다는 문제가 있었습니다.", 
+          "en": "In the 3D robot simulator, there was an issue where floaters would be floating on the floor or in the air due to the nature of the Gaussian splatting model, which caused problems with smooth movement when the robot moved in the simulator." 
+        },
+        { 
+          "ko": "그 문제를 해결하기 위하여 YOLO, RANSAC과 같은 알고리즘을 사용하여 바닥면을 추정합니다. 추정된 바닥면 위에 떠다니는 플로터들은 바닥면에 직교투영하여 평평하게 만들어줍니다.", 
+          "en": "To solve this problem, we used algorithms such as YOLO and RANSAC to estimate the floor plane. The floaters floating above the estimated floor plane are orthogonally projected onto the floor plane to flatten them." 
+        },
+        { 
+          "ko": "추정된 해당 바닥면으로 Mesh를 제작한 후 Unity에 업로드합니다.", 
+          "en": "Resulting mesh is exported to Unity." 
+        },
+        { 
+          "ko": "Unity 상에서 시각화 렌더링은 가우시안 스플래팅 모델을, 로봇 시뮬레이션 진행 시 충돌 감지를 위해 평평하게 만들어진 물리용 바닥 Mesh를 합칩니다.", 
+          "en": "Unity combines Gaussian splatting for visualization with flat physics mesh for collision detection." 
+        },
+        { 
+          "ko": "해당 프로젝트의 결과물을 이후 캡스톤 프로젝트 팀에서 사용하여 로봇 시뮬레이터를 제작하였습니다.", 
+          "en": "The results of this project were used by the subsequent capstone project team to create a robot simulator." 
+        }
       ],
-      "github": ""
+      "github": "https://github.com/hwan129/2025_postcapstone"
     },
     {
       "id": "minimap",
-      "title": { "ko": "가우시안 스플래팅 미니맵 제작", "en": "Gaussian Splatting Minimap" },
+      "title": { "ko": "가우시안 스플래팅 기반 미니맵 제작 자동화", "en": "Gaussian Splatting Minimap" },
       "category": "인턴십",
       "period": "2025.06 - 2025.08",
       "teamSize": { "ko": "1명", "en": "1" },
       "technologies": ["Python"],
-      "description": { "ko": "가우시안 스플래팅 기반 2.5D Mesh 형식 미니맵.", "en": "2.5D mesh minimap based on Gaussian splatting." },
+      "description": { "ko": "가우시안 스플래팅 기반 2.5D 메쉬 형식 미니맵 제작.", "en": "2.5D mesh minimap based on Gaussian splatting." },
       "achievements": [],
+      "papers": [],
       "details": [
-        { "ko": "RANSAC 알고리즘으로 바닥 평면을 추정한 후 바닥 평면 위에 있는 구조물들만 따로 떼내어 DBSCAN을 통해 클러스터링하고 윤곽선을 다듬습니다.", "en": "RANSAC for floor estimation; structures clustered with DBSCAN and contours refined." },
-        { "ko": "그 결과물을 Mesh로 변환하여 로봇 관제에 활용할 수 있는 2.5D 미니맵을 제작합니다.", "en": "Mesh output used for 2.5D minimap in robot control." }
+        { 
+          "ko": "포스코 공장 환경 모니터링 및 로봇 관제를 위해 사용할 미니맵을 기존에는 수작업으로 제작하였으나, 이에 불편함을 느끼고 가우시안 스플래팅 모델 기반 미니맵 자동화 프로그램을 제작하게 되었습니다.", 
+          "en": "" 
+        },
+        { 
+          "ko": "공장의 가우시안 스플래팅 모델에서 벽을 잘라낸 후, RANSAC 알고리즘으로 바닥 평면을 추정합니다.", 
+          "en": "" 
+        },
+        { 
+          "ko": "바닥 평면 위에 있는 구조물들만 따로 떼낸 후, DBSCAN을 통해 클러스터링하고 함수값을 조정하여 윤곽선을 부드럽게 다듬습니다.", 
+          "en": "" 
+        },
+        { 
+          "ko": "그 결과물을 Mesh로 변환하여 로봇 관제에 활용할 수 있는 2.5D 미니맵을 제작합니다.", 
+          "en": "" 
+        },
+        { 
+          "ko": "인턴십 기간 중 진행했던 개별 연구 프로젝트로, 초기에 주제 선정 시 실제로 구현 가능할지 의문을 제기하였으나 완성도 높게 완료하여 퇴사 이후에도 로봇 관제 웹 프로젝트 진행 시 사용한다고 함", 
+          "en": "" 
+        },
+        { 
+          "ko": "해당 프로젝트에서 아이디어를 얻어 이후 포스트 캡스톤 프로젝트에서도 RANSAC 알고리즘을 활용하여 프로젝트를 진행하였습니다.", 
+          "en": "" 
+        }
       ],
       "github": ""
     },
@@ -157,12 +279,22 @@
       "period": "2025.06 - 2025.08",
       "teamSize": { "ko": "3명", "en": "3" },
       "technologies": ["JavaScript", "Three.js", "HeidiSQL", "SVN"],
-      "description": { "ko": "RIST 실험동 입장 시 작업자의 안전과 실험동 안전 관리.", "en": "Worker safety and lab safety management for RIST facility entry." },
+      "description": { "ko": "RIST 실험동 입장 시 작업자의 안전과 실험동 안전 관리 플랫폼.", "en": "Worker safety and lab safety management for RIST facility entry." },
       "achievements": [],
+      "papers": [],
       "details": [
-        { "ko": "RIST 실험동 입장 시 작업자가 안전 교육을 받고 안전 관리 감독 하에 작업을 수행할 수 있도록 합니다.", "en": "Safety training and supervised work for RIST lab entry." },
-        { "ko": "디지털 트윈 환경 상에서 관리자가 위험한 장비나 구조물에 경고 메시지를 스티커 형식으로 생성할 수 있으며, TBM 작성, AI를 통해 개인 보호 장비 착용 유무를 확인할 수 있습니다.", "en": "Digital twin: warning stickers, TBM, AI-based PPE check." },
-        { "ko": "저는 API 명세 작성 후 백엔드 개발을 위주로, TBM 리스트 작성과 경고 메시지 생성 등 전반적인 프론트엔드 개발을 맡았습니다.", "en": "I worked on API spec, backend, TBM list, warning messages, and frontend." }
+        { 
+          "ko": "RIST 실험동 입장 시 작업자가 안전 교육을 받고 안전 관리 감독 하에 작업을 수행할 수 있도록 합니다.", 
+          "en": "Safety training and supervised work for RIST lab entry." 
+        },
+        { 
+          "ko": "디지털 트윈 환경 상에서 관리자가 위험한 장비나 구조물에 경고 메시지를 스티커 형식으로 생성할 수 있으며, TBM 작성, AI를 통해 개인 보호 장비 착용 유무를 확인할 수 있습니다.", 
+          "en": "Digital twin: warning stickers, TBM, AI-based PPE check." 
+        },
+        { 
+          "ko": "저는 API 명세 작성 후 백엔드 개발을 위주로, TBM 리스트 작성과 경고 메시지 생성 등 전반적인 프론트엔드 개발을 맡았습니다.", 
+          "en": "I worked on API spec, backend, TBM list, warning messages, and frontend." 
+        }
       ],
       "github": ""
     },
@@ -175,6 +307,7 @@
       "technologies": ["JavaScript", "Docker", "Express.js", "SVN"],
       "description": { "ko": "할루시네이션을 없앤 사내 문서 기반 사내 챗봇.", "en": "In-house document-based chatbot with reduced hallucination (RAG)." },
       "achievements": [],
+      "papers": [],
       "details": [
         { "ko": "RAG 기반으로 사내 문서를 학습하고, 사용자의 질의에 응답할 수 있는 사내 챗봇을 제작하였습니다.", "en": "RAG-based chatbot that learns company documents and answers user queries." },
         { "ko": "사내 문서를 업로드하였을 때 해당 문서를 자동으로 분류하여 사내 서버에 저장합니다.", "en": "Auto classification and storage of uploaded documents on company server." },
@@ -191,6 +324,7 @@
       "technologies": ["Figma", "JavaScript", "HeidiSQL", "Express.js"],
       "description": { "ko": "그룹웨어 서비스 유지보수 및 기능 추가.", "en": "Groupware maintenance and feature development." },
       "achievements": [],
+      "papers": [],
       "details": [
         { "ko": "프로그램 코드를 처음 전달 받았을 때 파일 구조가 복잡하고 비효율적이어서 기존 코드를 폴더별로 깔끔하게 정리하였습니다.", "en": "Refactored complex codebase into a cleaner folder structure." },
         { "ko": "사원들의 출퇴근 및 각종 문서를 관리하는 기존의 그룹웨어 서비스에서 꼭 필요한 기능들만 남겼으며, 사내 챗봇도 추가하였습니다.", "en": "Streamlined groupware (attendance, documents) and added in-house chatbot." }

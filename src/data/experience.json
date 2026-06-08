@@ -25,12 +25,23 @@
       "description": { "ko": "", "en": "" }
     }
   ],
+  
+  "certifications": [
+    {
+      "id": "SQLD",
+      "icon": "en",
+      "title": "SQLD",
+      "level": "SQLD-060021723",
+      "date": "2026.03"
+    }
+  ],
   "languages": [
     {
       "id": "opic",
       "icon": "en",
       "title": "OPIc",
-      "level": "AL (Advanced Low)"
+      "level": "AL (Advanced Low)",
+      "date": "2025.09"
     }
   ]
 }

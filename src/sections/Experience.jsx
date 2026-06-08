@@ -53,8 +53,31 @@ function Experience() {
       </ExperienceContainer>
 
       <ExperienceContainer>
-        <SectionTitle>{t('language_title')}</SectionTitle>
+        <SectionTitle>{t('certification_title')}</SectionTitle>
+        {experienceData.certifications.map((cert) => {
+          const iconSrc = getIconSrc(cert.icon);
+          const title = getText(cert.title);
+          const date = getText(cert.date);
+          const level = getText(cert.level);
+
+          return (
+            <ExperienceItem key={cert.id}>
+              <IconWrapper>
+                {iconSrc && <img src={iconSrc} alt={title} />}
+              </IconWrapper>
+              <ContentWrapper>
+                <ItemTitle>{title}</ItemTitle>
+                <ItemRole>{level}</ItemRole>
+                <ItemRole>{date}</ItemRole>
+              </ContentWrapper>
+            </ExperienceItem>
+          );
+        })}
+
         
+      </ExperienceContainer>
+      <ExperienceContainer>
+        <SectionTitle>{t('language_title')}</SectionTitle>
         {experienceData.languages.map((lang) => {
           const iconSrc = getIconSrc(lang.icon);
           return (
@@ -65,6 +88,7 @@ function Experience() {
               <ContentWrapper>
                 <ItemTitle>{lang.title}</ItemTitle>
                 <ItemRole>{lang.level}</ItemRole>
+                <ItemRole>{lang.date}</ItemRole>
               </ContentWrapper>
             </LanguageItem>
           );

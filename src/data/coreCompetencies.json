@@ -4,21 +4,22 @@
       "id": "competency-1",
       "icon": "communication",
       "title": { "ko": "커뮤니케이션 및 협업", "en": "Communication & Collaboration" },
-      "description": { "ko": "사람을 끌어들이는 힘을 가지고 있습니다.\n팀원들과 활발하게 소통하고 협력하며, 다른 사람의 의견을 존중합니다.", "en": "I have a natural ability to bring people together.\nI communicate and collaborate actively with teammates and respect others' opinions." }
+      "description": { "ko": "멋쟁이사자처럼, 인턴십, 연구실까지 다양한 프로젝트를 진행하였습니다.\n그 시간을 통해 팀원들과 활발하게 소통하고 협력하며, 타인의 의견을 존중하여 팀워크를 최대치로 끌어올릴 수 있는 방법을 배워왔습니다.", 
+                       "en": "I have participated in various projects.\nThrough these experiences, I learned how to actively communicate and collaborate with teammates, respect others' opinions, and maximize teamwork." }
     },
     {
       "id": "competency-2",
       "icon": "ethics",
-      "title": { "ko": "윤리 의식", "en": "Ethical Awareness" },
-      "description": { "ko": "주어진 사회적 역할과 책임을 잘 지켜 법 없이도 살 수 있는 사람이라는 이야기를 많이 듣습니다.\n공동의 이익을 추구하고, 잔꾀를 부리지 않으며 매사에 성실하고 근면한 자세로 업무에 입합니다.", 
-      "en": "I have an ethical awareness and make correct decisions.\nI pursue common interests, avoid cutting corners, and approach work with diligence and honesty." }
+      "title": { "ko": "다재다능함", "en": "Versatility" },
+      "description": { "ko": "전공 분야 뿐만 아니라 디자인, 음악까지 다양한 방면에 다채로운 재능을 가진 팔색조 같은 사람입니다.\n다양한 분야에서 쌓은 경험과 지식을 바탕으로 창의적인 아이디어를 제시하고, 새로운 환경에서 습득력과 적응력이 좋습니다.", 
+                       "en": "I am a versatile person with talents in various fields, including not only my major but also design and music.\nBased on experiences and knowledge gained from diverse areas, I can present creative ideas and quickly adapt to new environments." }
     },
     {
       "id": "competency-3",
       "icon": "detail",
       "title": { "ko": "꼼꼼함", "en": "Attention to Detail" },
-      "description": { "ko": "한 가지 일을 하더라도 더블체크를 습관화하기 때문에 실수가 적습니다.\n처음에는 일의 진행이 더딜 수 있으나, 일이 손에 익고 나면 속도가 붙을 뿐더러, 창의적인 의견을 내거나 시키지 않은 일까지도 할 수 있습니다.", 
-      "en": "I habitually double-check tasks, so I make fewer mistakes. Initially, it may slow down progress, but once I get used to it, I can speed up and even do tasks I wasn't assigned." }
+      "description": { "ko": "한 가지 일을 하더라도 더블 체크를 습관화하기 때문에 실수가 적습니다.\n처음에는 일의 진행이 더딜 수 있으나, 적응하고 나면 속도가 빠르게 붙을 뿐더러, 창의적인 의견을 내거나 시키지 않은 일까지도 찾아서 할 수 있습니다.", 
+      "en": "I habitually double-check my work, which helps me minimize mistakes.\nAlthough I may work carefully at first, once I adapt, I become faster and can proactively suggest creative ideas or take initiative beyond assigned tasks." }
     }
   ]
 }

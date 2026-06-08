@@ -18,7 +18,7 @@ function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const categories = ['전체', '멋쟁이사자처럼', '인턴십', '캡스톤 프로젝트'];
+  const categories = ['전체', '멋쟁이사자처럼', '인턴십', '캡스톤 프로젝트', '개인 프로젝트'];
   const filteredProjects = selectedCategory === '전체' 
     ? projectsData.projects 
     : projectsData.projects.filter(p => p.category === selectedCategory);
@@ -88,6 +88,13 @@ function Projects() {
                 ))}
               </CardAchievements>
             )}
+            {project.papers && project.papers.length > 0 && (
+              <CardPapers>
+                {project.papers.map((paper, idx) => (
+                  <AchievementItem key={idx}>{getText(paper)}</AchievementItem>
+                ))}
+                </CardPapers>   
+            )}
             {project.github && (
               <GitHubIcon onClick={(e) => {
                 e.stopPropagation();
@@ -143,6 +150,15 @@ function Projects() {
                   <ModalLabel>{t('modal_achievements')}</ModalLabel>
                   {selectedProject.achievements.map((achievement, idx) => (
                     <ModalText key={idx}>{getText(achievement)}</ModalText>
+                  ))}
+                </ModalSection>
+              )}
+              
+              {selectedProject.papers.length > 0 && (
+                <ModalSection>
+                  <ModalLabel>{t('modal_papers')}</ModalLabel>
+                  {selectedProject.papers.map((paper, idx) => (
+                    <ModalText key={idx}>{getText(paper)}</ModalText>
                   ))}
                 </ModalSection>
               )}
@@ -215,7 +231,7 @@ const SectionSubtitle = styled.p`
 
 
 const CategoryFilter = styled.div`
-  width: 500px;
+  width: 670px;
   display: flex;
   justify-content: center;
   gap: 12px;
@@ -336,6 +352,10 @@ const CardDescription = styled.p`
 `;
 
 const CardAchievements = styled.div`
+  margin-top: 16px;
+`;
+
+const CardPapers = styled.div`
   margin-top: 16px;
 `;
 

@@ -32,8 +32,8 @@ export const translations = {
     en: 'I have worked on a variety of projects across front-end, back-end, and 3D web development,'
   },
   message_4: { 
-    ko: '앞으로도 분야를 가리지 않고 계속해서 새로운 도전을 이어나갈 것입니다.', 
-    en: 'and I will continue to take on new challenges and expand my skills across different fields.' 
+    ko: '앞으로도 계속해서 새로운 도전을 이어나갈 것입니다.', 
+    en: 'and I will continue to take on new challenges and expand my skills.' 
   },
   message_5: { 
     ko: '저의 새로운 도전에 함께해주세요.', 
@@ -61,7 +61,8 @@ export const translations = {
     ko: '저를 성장시켜준 협업과 일 경험입니다.', 
     en: 'Work and collaboration experiences that helped me grow.' 
   },
-  language_title: { ko: '자격증', en: 'Certifications' },
+  certification_title: { ko: '자격증', en: 'Certifications' },
+  language_title: { ko: '어학', en: 'Language' },
 
   // Projects
   projects_title: { ko: '프로젝트', en: 'Projects' },
@@ -75,6 +76,7 @@ export const translations = {
   modal_tech: { ko: '기술 스택', en: 'Tech Stack' },
   modal_description: { ko: '프로젝트 설명', en: 'Description' },
   modal_achievements: { ko: '수상 내역', en: 'Achievements' },
+  modal_papers: { ko: '논문', en: 'Papers' },
   modal_details: { ko: '상세 내용', en: 'Details' },
   github_link: { ko: 'GitHub 링크', en: 'GitHub' },
 

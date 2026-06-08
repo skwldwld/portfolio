@@ -14,15 +14,22 @@
       "category": "3D",
       "tags": [
         { "name": "Three.js", "bgColor": "#000000", "textColor": "#FFFFFF" },
-        { "name": "WebGL", "bgColor": "#000000", "textColor": "#FFFFFF" }
+        { "name": "WebGL", "bgColor": "#990000", "textColor": "#FFFFFF" }
+      ]
+    },
+    {
+      "category": "Frontend",
+      "tags": [
+        { "name": "React", "bgColor": "#000000", "textColor": "#61DAFB" },
+        { "name": "Vite", "bgColor": "#BD34FE", "textColor": "#FFB300" }
       ]
     },
     {
       "category": "Backend",
       "tags": [
-        { "name": "Firebase", "bgColor": "#FF611A", "textColor": "#FFFFFF" },
+        { "name": "Firebase", "bgColor": "#F57C00", "textColor": "#FFFFFF" },
         { "name": "MySQL", "bgColor": "#4479A1", "textColor": "#FFFFFF" },
-        { "name": "HeidiSQL", "bgColor": "#6B8E23", "textColor": "#FFFFFF" }
+        { "name": "HeidiSQL", "bgColor": "#00AEEF", "textColor": "#FFFFFF" }
       ]
     },
     {
@@ -35,8 +42,9 @@
     {
       "category": "Tool",
       "tags": [
-        { "name": "Figma", "bgColor": "#F05032", "textColor": "#FFFFFF" },
-        { "name": "Notion", "bgColor": "#F05032", "textColor": "#FFFFFF" }
+        { "name": "Figma", "bgColor": "#A259FF", "textColor": "#ffffff" },
+        { "name": "Notion", "bgColor": "#000000", "textColor": "#FFFFFF" },
+        { "name": "Adobe Photoshop", "bgColor": "#001E36", "textColor": "#31A8FF" }
       ]
     }
   ],
