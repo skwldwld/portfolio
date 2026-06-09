@@ -5,6 +5,7 @@ import likelionIcon from '../assets/likelion.svg';
 import volunteerIcon from '../assets/volunteer.svg';
 import companyIcon from '../assets/company.svg';
 import opicIcon from '../assets/opic.svg';
+import codeIcon from '../assets/code.svg';
 import { useLanguage } from '../context/LanguageContext';
 
 function Experience() {
@@ -20,6 +21,8 @@ function Experience() {
         return companyIcon;
       case 'en':
         return opicIcon;
+      case 'code':
+        return codeIcon;
       default:
         return null;
     }
@@ -56,21 +59,18 @@ function Experience() {
         <SectionTitle>{t('certification_title')}</SectionTitle>
         {experienceData.certifications.map((cert) => {
           const iconSrc = getIconSrc(cert.icon);
-          const title = getText(cert.title);
-          const date = getText(cert.date);
-          const level = getText(cert.level);
 
           return (
-            <ExperienceItem key={cert.id}>
-              <IconWrapper>
-                {iconSrc && <img src={iconSrc} alt={title} />}
-              </IconWrapper>
+            <LanguageItem key={cert.id}>
+              <LanguageIconWrapper>
+                {iconSrc && <img src={iconSrc} alt={cert.title} />}
+              </LanguageIconWrapper>
               <ContentWrapper>
-                <ItemTitle>{title}</ItemTitle>
-                <ItemRole>{level}</ItemRole>
-                <ItemRole>{date}</ItemRole>
+                <ItemTitle>{cert.title}</ItemTitle>
+                <ItemRole>{cert.level}</ItemRole>
+                <ItemRole>{cert.date}</ItemRole>
               </ContentWrapper>
-            </ExperienceItem>
+            </LanguageItem>
           );
         })}
 
