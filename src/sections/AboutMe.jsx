@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import styled, { keyframes } from 'styled-components';
-import profileImage from '../assets/profile.jpg';
+import profileImage from '../assets/profile_pic.jpeg';
 import personIcon from '../assets/person.svg';
 import birthdayIcon from '../assets/birthday.svg';
 import locationIcon from '../assets/home.svg';
@@ -131,6 +131,7 @@ const AboutMeContainer = styled.div`
   background: ${({ theme }) => theme.colors.surface};
   border-radius: 20px;
   padding: 60px;
+  padding-bottom: 80px;
   margin-bottom: 120px;
 
   @media (max-width: 768px) {
