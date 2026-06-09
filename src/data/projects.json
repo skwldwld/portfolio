@@ -7,7 +7,7 @@
       "period": "2024.03 - 2024.07",
       "teamSize": { "ko": "4명 (PD 1, FE 2, BE 1)", "en": "4 (PD 1, FE 2, BE 1)" },
       "technologies": ["React", "Figma", "Notion"],
-      "description": { "ko": "매운 음식을 좋아하는 사람들을 위한 매운 맛 지도.", "en": "Spicy food map for people who love spicy food." },
+      "description": { "ko": "매운 음식을 좋아하는 사람들을 위한 매운 음식 맛집 추천.", "en": "Spicy food map for people who love spicy food." },
       "achievements": [
         { "ko": "멋쟁이사자처럼 해커톤 대상 수상", "en": "Grand Prize, Like Lion Hackathon" },
         { "ko": "교내 sw 개발 경진대회 우수상 수상", "en": "Excellence Award, University SW Development Contest" }
@@ -54,7 +54,7 @@
       "period": "2024.01 - 2024.01",
       "teamSize": { "ko": "5명 (PD 1, FE 2, BE 2)", "en": "5 (PD 1, FE 2, BE 2)" },
       "technologies": ["React", "Figma", "Notion"],
-      "description": { "ko": "화알못들을 위한 화장품 추천 플랫폼.", "en": "MakeUp recommendation platform for people who don't know makeup." },
+      "description": { "ko": "화알못들을 위한 화장법 공유 및 추천 플랫폼.", "en": "MakeUp recommendation platform for people who don't know makeup." },
       "achievements": [],
       "papers": [],
       "details": [
@@ -71,7 +71,7 @@
     },
     {
       "id": "frontend",
-      "title": "frontend",
+      "title": "프론트엔드 소개 페이지",
       "category": "멋쟁이사자처럼",
       "period": "2023.12 - 2023.12",
       "teamSize": { "ko": "10명 (FE)", "en": "10 (FE)" },
@@ -94,7 +94,7 @@
       "period": "2024.11 - 2024.12",
       "teamSize": { "ko": "3명", "en": "3" },
       "technologies": ["Dart", "Firebase", "Figma"],
-      "description": { "ko": "팟(파티원)을 찾는 어플리케이션.", "en": "App for finding party members to share orders with." },
+      "description": { "ko": "팟(파티원)을 찾는 것을 도와주는 플랫폼.", "en": "App for finding party members to share orders with." },
       "achievements": [],
       "papers": [],
       "details": [
@@ -116,7 +116,7 @@
       "period": "2025.04 - 2025.06",
       "teamSize": { "ko": "1명", "en": "1" },
       "technologies": ["JavaScript", "Three.js", "Cannon.js"],
-      "description": { "ko": "예측 불가 농구 게임.", "en": "Unpredictable basketball game." },
+      "description": { "ko": "내기를 위한 예측 불가 농구 게임.", "en": "Unpredictable basketball game." },
       "achievements": [],
       "papers": [],
       "details": [
@@ -137,12 +137,12 @@
     },
     {
       "id": "portfolio",
-      "title": "Portfolio",
+      "title": "포트폴리오",
       "category": "개인 프로젝트",
       "period": "2025.12 - 2026.01",
       "teamSize": { "ko": "1명", "en": "1" },
       "technologies": ["React", "Figma"],
-      "description": { "ko": "포트폴리오.", "en": "Portfolio." },
+      "description": { "ko": "포트폴리오 정리.", "en": "Portfolio." },
       "achievements": [],
       "papers": [],
       "details": [
@@ -201,10 +201,10 @@
       "period": "2025.09 - 2025.12",
       "teamSize": { "ko": "2명", "en": "2" },
       "technologies": ["Python", "Unity"],
-      "description": { "ko": "포스트 캡스톤.", "en": "Post-capstone research." },
+      "description": { "ko": "포스트 캡스톤 프로젝트.", "en": "Post-capstone research." },
       "achievements": [],
       "papers": [
-        { "ko": "IEEE VR 논문 - Floor Flattening of Image-Based 3D Reconstruction for Mobile Robots", "en": "Paper published at IEEE VR" }
+        { "ko": "IEEE VR - Floor Flattening of Image-Based 3D Reconstruction for Mobile Robots", "en": "Paper published at IEEE VR" }
       ],
       "details": [
         { 
@@ -247,34 +247,34 @@
       "details": [
         { 
           "ko": "포스코 공장 환경 모니터링 및 로봇 관제를 위해 사용할 미니맵을 기존에는 수작업으로 제작하였으나, 이에 불편함을 느끼고 가우시안 스플래팅 모델 기반 미니맵 자동화 프로그램을 제작하게 되었습니다.", 
-          "en": "" 
+          "en": "To automate the creation of minimaps based on Gaussian splatting models for monitoring and robot control in POSCO factory environments, I developed a program to replace the previous manual process." 
         },
         { 
           "ko": "공장의 가우시안 스플래팅 모델에서 벽을 잘라낸 후, RANSAC 알고리즘으로 바닥 평면을 추정합니다.", 
-          "en": "" 
+          "en": "After cutting out walls from the POSCO factory's Gaussian splatting model, I used the RANSAC algorithm to estimate the floor plane." 
         },
         { 
           "ko": "바닥 평면 위에 있는 구조물들만 따로 떼낸 후, DBSCAN을 통해 클러스터링하고 함수값을 조정하여 윤곽선을 부드럽게 다듬습니다.", 
-          "en": "" 
+          "en": "Only the structures on the estimated floor plane were extracted, then clustered using DBSCAN and the function values were adjusted to smooth the contours." 
         },
         { 
           "ko": "그 결과물을 Mesh로 변환하여 로봇 관제에 활용할 수 있는 2.5D 미니맵을 제작합니다.", 
-          "en": "" 
+          "en": "The resulting mesh is converted to create a 2.5D minimap for robot control." 
         },
         { 
           "ko": "인턴십 기간 중 진행했던 개별 연구 프로젝트로, 초기에 주제 선정 시 실제로 구현 가능할지 의문을 제기하였으나 완성도 높게 완료하여 퇴사 이후에도 로봇 관제 웹 프로젝트 진행 시 사용한다고 함", 
-          "en": "" 
+          "en": "This was an individual research project conducted during the internship period. Although there were doubts about the feasibility of implementation at the initial stage of topic selection, it was completed with high quality, and it is said that it will be used in subsequent robot control web projects after departure." 
         },
         { 
           "ko": "해당 프로젝트에서 아이디어를 얻어 이후 포스트 캡스톤 프로젝트에서도 RANSAC 알고리즘을 활용하여 프로젝트를 진행하였습니다.", 
-          "en": "" 
+          "en": "The ideas from this project were later applied to a subsequent post-capstone project where the RANSAC algorithm was utilized." 
         }
       ],
       "github": ""
     },
     {
       "id": "rist",
-      "title": { "ko": "RIST 실험동 작업 안전 미리보기", "en": "RIST Lab Safety Preview" },
+      "title": { "ko": "RIST 실험동 작업 안전 관리", "en": "RIST Lab Safety Management" },
       "category": "인턴십",
       "period": "2025.06 - 2025.08",
       "teamSize": { "ko": "3명", "en": "3" },
@@ -284,23 +284,23 @@
       "papers": [],
       "details": [
         { 
-          "ko": "RIST 실험동 입장 시 작업자가 안전 교육을 받고 안전 관리 감독 하에 작업을 수행할 수 있도록 합니다.", 
-          "en": "Safety training and supervised work for RIST lab entry." 
+          "ko": "RIST 실험동 공장 입장 시 작업자가 안전 교육을 받고 안전 관리 감독 하에 작업을 수행할 수 있도록 하는 안전 관리 플랫폼입니다.", 
+          "en": "A safety management platform that ensures workers receive safety training and operate under safety supervision when entering the RIST facility." 
         },
         { 
           "ko": "디지털 트윈 환경 상에서 관리자가 위험한 장비나 구조물에 경고 메시지를 스티커 형식으로 생성할 수 있으며, TBM 작성, AI를 통해 개인 보호 장비 착용 유무를 확인할 수 있습니다.", 
-          "en": "Digital twin: warning stickers, TBM, AI-based PPE check." 
+          "en": "In the digital twin environment, administrators can create warning messages in sticker format for hazardous equipment or structures, and use AI to check if individuals are wearing protective gear." 
         },
         { 
           "ko": "저는 API 명세 작성 후 백엔드 개발을 위주로, TBM 리스트 작성과 경고 메시지 생성 등 전반적인 프론트엔드 개발을 맡았습니다.", 
-          "en": "I worked on API spec, backend, TBM list, warning messages, and frontend." 
+          "en": "I was primarily responsible for backend development after API specification, and also handled frontend development for TBM list creation and alert message generation." 
         }
       ],
       "github": ""
     },
     {
       "id": "chatbot",
-      "title": { "ko": "RAG 기반 사내 챗봇 제작", "en": "RAG-based In-house Chatbot" },
+      "title": { "ko": "RAG 기반 사내 챗봇", "en": "RAG-based In-house Chatbot" },
       "category": "인턴십",
       "period": "2025.07 - 2025.08",
       "teamSize": { "ko": "1명", "en": "1" },
@@ -309,15 +309,24 @@
       "achievements": [],
       "papers": [],
       "details": [
-        { "ko": "RAG 기반으로 사내 문서를 학습하고, 사용자의 질의에 응답할 수 있는 사내 챗봇을 제작하였습니다.", "en": "RAG-based chatbot that learns company documents and answers user queries." },
-        { "ko": "사내 문서를 업로드하였을 때 해당 문서를 자동으로 분류하여 사내 서버에 저장합니다.", "en": "Auto classification and storage of uploaded documents on company server." },
-        { "ko": "사용자의 입력에 따라 문서를 작성합니다.", "en": "Document generation based on user input." }
+        { 
+          "ko": "LLM 기반 챗봇이 기존에 가지고 있던 할루시네이션 문제를 해결하기 위하여 RAG 기반으로 사내 문서를 학습하고, 사용자의 질의에 응답할 수 있는 사내 챗봇을 제작하였습니다.",
+          "en": "To address the hallucination issue of the existing LLM-based chatbot, I developed an RAG-based in-house chatbot that learns from company documents and can respond to user queries." 
+        },
+        { 
+          "ko": "사내 문서를 업로드하면 해당 문서를 카테고리별로(보고서, 예산 계획서 등) 자동으로 분류하여 사내 서버에 저장합니다.", 
+          "en": "When a document is uploaded, it is automatically categorized (report, budget plan, etc.) and stored on the company server." 
+        },
+        { 
+          "ko": "사용자가 사내 규정 등에 대한 질문을 하면 챗봇이 해당 내용을 검색하여 사용자에게 답변합니다.", 
+          "en": "When a user asks a question about company policies, the chatbot searches for the relevant information and provides an answer." 
+        }
       ],
       "github": ""
     },
     {
       "id": "groupware",
-      "title": { "ko": "사내 그룹웨어 서비스 제작", "en": "In-house Groupware Service" },
+      "title": { "ko": "사내 그룹웨어 서비스", "en": "In-house Groupware Service" },
       "category": "인턴십",
       "period": "2025.07 - 2025.08",
       "teamSize": { "ko": "2명", "en": "2" },
@@ -326,8 +335,18 @@
       "achievements": [],
       "papers": [],
       "details": [
-        { "ko": "프로그램 코드를 처음 전달 받았을 때 파일 구조가 복잡하고 비효율적이어서 기존 코드를 폴더별로 깔끔하게 정리하였습니다.", "en": "Refactored complex codebase into a cleaner folder structure." },
-        { "ko": "사원들의 출퇴근 및 각종 문서를 관리하는 기존의 그룹웨어 서비스에서 꼭 필요한 기능들만 남겼으며, 사내 챗봇도 추가하였습니다.", "en": "Streamlined groupware (attendance, documents) and added in-house chatbot." }
+        { 
+          "ko": "프로그램 코드를 처음 전달 받았을 때 파일 구조가 복잡하고 비효율적이어서 기존 코드를 폴더별로 깔끔하게 정리하였습니다.", 
+          "en": "Refactored complex codebase into a cleaner folder structure." 
+        },
+        { 
+          "ko": "Figma를 이용하여 기존 그룹웨어 서비스의 UI를 개선하였으며, 기존 서비스에서 사원들의 출퇴근 및 각종 문서를 관리 등 꼭 필요한 기능들만 남기고 불필요한 기능들을 제거하고 RAG 기반 챗봇 기능을 추가하여 서비스를 최적화시켰습니다.", 
+          "en": "Used Figma to improve the UI of the existing groupware service, optimized the service by keeping only essential features such as attendance and document management, removing unnecessary features, and adding RAG-based chatbot functionality." 
+        },
+        { 
+          "ko": "퇴사 전 README 파일을 작성하여 유지보수 방법에 대하여 상세히 설명하였으며, 퇴사 이후에도 해당 서비스를 사용하는 데 어려움이 없도록 하였습니다.", 
+          "en": "Wrote a README file detailing the maintenance methods, ensuring that the service can be used without difficulty after departure." 
+        }
       ],
       "github": ""
     }

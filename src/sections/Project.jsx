@@ -68,7 +68,7 @@ function Projects() {
           >
             <CardHeader>
               <CardTitle>{getText(project.title)}</CardTitle>
-              {project.technologies.length > 0 && (() => {
+              {/* {project.technologies.length > 0 && (() => {
                 const tech = project.technologies[0];
                 const colors = getTechColors(tech);
                 return (
@@ -76,25 +76,42 @@ function Projects() {
                     {tech}
                   </TechnologyTag>
                 );
-              })()}
+              })()} */}
             </CardHeader>
             <CardPeriod>{project.period}</CardPeriod>
             <CardTeamSize>{getText(project.teamSize)}</CardTeamSize>
-            <CardDescription>{getText(project.description)}</CardDescription>
-            {project.achievements.length > 0 && (
-              <CardAchievements>
-                {project.achievements.map((achievement, idx) => (
-                  <AchievementItem key={idx}>{getText(achievement)}</AchievementItem>
-                ))}
-              </CardAchievements>
-            )}
-            {project.papers && project.papers.length > 0 && (
-              <CardPapers>
-                {project.papers.map((paper, idx) => (
-                  <AchievementItem key={idx}>{getText(paper)}</AchievementItem>
-                ))}
-                </CardPapers>   
-            )}
+            <CardTags>
+              {project.technologies.map((tech, idx) => {
+                const colors = getTechColors(tech);
+
+                return (
+                  <TechnologyTag
+                    key={idx}
+                    bgColor={colors.bgColor}
+                    textColor={colors.textColor}
+                  >
+                    {tech}
+                  </TechnologyTag>
+                );
+              })}
+            </CardTags>
+            <CardContent>
+              <CardDescription>{getText(project.description)}</CardDescription>
+              {project.achievements.length > 0 && (
+                <CardAchievements>
+                  {project.achievements.map((achievement, idx) => (
+                    <AchievementItem key={idx}>{getText(achievement)}</AchievementItem>
+                  ))}
+                </CardAchievements>
+              )}
+              {project.papers && project.papers.length > 0 && (
+                <CardPapers>
+                  {project.papers.map((paper, idx) => (
+                    <AchievementItem key={idx}>{getText(paper)}</AchievementItem>
+                  ))}
+                  </CardPapers>   
+              )}
+            </CardContent>
             {project.github && (
               <GitHubIcon onClick={(e) => {
                 e.stopPropagation();
@@ -280,11 +297,17 @@ const ProjectsGrid = styled.div`
 `;
 
 const ProjectCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
   background: ${({ theme }) => theme.colors.surface};
   border-radius: 16px;
   padding: 32px;
   cursor: pointer;
   border: 1px solid ${({ theme }) => theme.colors.border};
+  aspect-ratio: 1 / 0.8;
 
   transition: all 0.3s ease;
   position: relative;
@@ -307,11 +330,12 @@ const CardHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-top: 15px;
   margin-bottom: 8px;
 `;
 
 const CardTitle = styled.h3`
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 700;
   color: ${({ theme }) => theme.colors.text};
   margin: 0;
@@ -329,17 +353,33 @@ const TechnologyTag = styled.span`
 `;
 
 const CardPeriod = styled.p`
-  font-size: 12px;
+  font-size: 13px;
   color: #666;
   margin: 0 0 5px 0;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 `;
 
 const CardTeamSize = styled.p`
-  font-size: 12px;
+  font-size: 13px;
   color: #666;
   margin: 0 0 16px 0;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+`;
+
+const CardTags = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 0 16px 0;
+`;
+
+const CardContent = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 `;
 
 const CardDescription = styled.p`
