@@ -23,7 +23,12 @@
         { "ko": "초반 기획 단계에서 기획자가 이탈한 상황에서 디자이너와 개발자가 적극적으로 의견을 제시하였으며, 서로의 의견을 조율하며 프로젝트를 체계적으로 진행하는 방법에 대해 배울 수 있었습니다.", 
           "en": "A valuable project built by designers and developers who actively shared ideas and supported each other." }
       ],
-      "github": "https://github.com/LikeLionHGU/Hot_Front"
+      "github": "https://github.com/LikeLionHGU/Hot_Front",
+      "images": [
+        "/portfolio/projects/hotspot/hs1.png",
+        "",
+        ""
+      ]
     },
     {
       "id": "pickle",
@@ -45,7 +50,9 @@
         { "ko": "플랫폼 특성상 필터링이 구체적으로 들어가야 해서 필터 기능을 개발할 때 어려움을 겪었으나, 헷갈리는 부분이 있을 때마다 기획자, 디자이너와의 소통을 통해 기능을 기한 내에 완벽하게 구현할 수 있었습니다.", 
           "en": "Filtering functionality was challenging but successfully completed." }
       ],
-      "github": "https://github.com/LikeLionHGU/Pickle-Front-2024"
+      "github": "https://github.com/LikeLionHGU/Pickle-Front-2024",
+      "images": [
+      ]
     },
     {
       "id": "makeus",
@@ -67,7 +74,9 @@
         { "ko": "백엔드 개발자와 초반 API 명세 설계 이후로는 진행 상황을 구체적으로 공유하지 않았는데, API 연결을 하기로 한 날 백엔드 코드 구조상의 문제를 발견하여 어려움을 겪었습니다. 이 경험을 통하여 같은 프론트엔드 개발자 간의 소통 뿐만 아니라 다른 파트와의 소통도 중요하다는 것을 깨닫고 이후 프로젝트에서는 더 상세한 소통을 위하여 노력하였습니다.", 
           "en": "Due to a lack of specific communication about the progress after the initial API specification design with the backend developer, we encountered difficulties when connecting the API. This experience taught us the importance of communication not only among frontend developers but also with other teams, and we made efforts to improve communication in subsequent projects." }
       ],
-      "github": "https://github.com/LikeLionHGU/MakeUs"
+      "github": "https://github.com/LikeLionHGU/MakeUs",
+      "images": [
+      ]
     },
     {
       "id": "frontend",
@@ -85,7 +94,9 @@
         { "ko": "저는 배너 부분을 맡아서 개발하였으며, 배너가 넘어갈 때 자연스럽게 페이드인아웃 되도록 시각효과에 신경을 썼습니다.", 
           "en": "I developed the banner section. I paid attention to visual effects to make the banner transition smoothly." }
       ],
-      "github": "https://github.com/skwldwld/12th-frontend"
+      "github": "https://github.com/skwldwld/12th-frontend",
+      "images": [
+      ]
     },
     {
       "id": "partybread",
@@ -107,7 +118,9 @@
         { "ko": "디자인부터 프론트엔드, 백엔드까지 모두 개발하여 더욱 폭넓은 프로젝트 경험을 쌓을 수 있었습니다.", 
           "en": "Developed end-to-end by three developers (design, frontend, backend)." }
       ],
-      "github": "https://github.com/hwan129/party_bread"
+      "github": "https://github.com/hwan129/party_bread",
+      "images": [
+      ]
     },
     {
       "id": "whattheball",
@@ -133,7 +146,9 @@
           "en": "Received feedback that the idea was novel and fun from professors and classmates who played it during the project presentation, and received votes from over 60 people." 
         }
       ],
-      "github": "https://github.com/skwldwld/Basketball"
+      "github": "https://github.com/skwldwld/Basketball",
+      "images": [
+      ]
     },
     {
       "id": "portfolio",
@@ -159,7 +174,9 @@
           "en": "I will continue to grow and keep updating this portfolio."
         }
       ],
-      "github": "https://github.com/skwldwld/portfolio"
+      "github": "https://github.com/skwldwld/portfolio",
+      "images": [
+      ]
     },
     {
       "id": "capstone",
@@ -192,7 +209,9 @@
           "en": "I was responsible for implementing the control web interface, movement functionality within the Gaussian splatting model, and user interaction features such as collision detection." 
         }
       ],
-      "github": "https://github.com/Digital-Twin-CGV/GaussianSplattingforweb"
+      "github": "https://github.com/Digital-Twin-CGV/GaussianSplattingforweb",
+      "images": [
+      ]
     },
     {
       "id": "postcapstone",
@@ -232,7 +251,9 @@
           "en": "The results of this project were used by the subsequent capstone project team to create a robot simulator." 
         }
       ],
-      "github": "https://github.com/hwan129/2025_postcapstone"
+      "github": "https://github.com/hwan129/2025_postcapstone",
+      "images": [
+      ]
     },
     {
       "id": "minimap",
@@ -270,7 +291,9 @@
           "en": "The ideas from this project were later applied to a subsequent post-capstone project where the RANSAC algorithm was utilized." 
         }
       ],
-      "github": ""
+      "github": "",
+      "images": [
+      ]
     },
     {
       "id": "rist",
@@ -296,7 +319,9 @@
           "en": "I was primarily responsible for backend development after API specification, and also handled frontend development for TBM list creation and alert message generation." 
         }
       ],
-      "github": ""
+      "github": "",
+      "images": [
+      ]
     },
     {
       "id": "chatbot",
@@ -322,7 +347,9 @@
           "en": "When a user asks a question about company policies, the chatbot searches for the relevant information and provides an answer." 
         }
       ],
-      "github": ""
+      "github": "",
+      "images": [
+      ]
     },
     {
       "id": "groupware",
@@ -348,7 +375,9 @@
           "en": "Wrote a README file detailing the maintenance methods, ensuring that the service can be used without difficulty after departure." 
         }
       ],
-      "github": ""
+      "github": "",
+      "images": [
+      ]
     }
   ]
 }

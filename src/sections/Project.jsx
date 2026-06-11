@@ -189,6 +189,21 @@ function Projects() {
                 </ModalList>
               </ModalSection>
 
+              {selectedProject.images && selectedProject.images.length > 0 && (
+                <ModalSection>
+                  <ModalLabel>{t('modal_images')}</ModalLabel>
+                  <ProjectImageScroll>
+                    {selectedProject.images.map((image, idx) => (
+                      <ProjectImage
+                        key={idx}
+                        src={image}
+                        alt={`${getText(selectedProject.title)} screen ${idx + 1}`}
+                      />
+                    ))}
+                  </ProjectImageScroll>
+                </ModalSection>
+              )}
+
               {selectedProject.github && (
                 <ModalGitHubButton 
                   href={selectedProject.github} 
@@ -215,13 +230,10 @@ export default Projects;
 const fadeInUp = keyframes`
   from {
     opacity: 0;
-    transform: translateY(30px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
-  }
-`;
+  }`;
 
 const ProjectsSection = styled.section`
   min-height: 100vh;
@@ -307,24 +319,22 @@ const ProjectCard = styled.div`
   padding: 32px;
   cursor: pointer;
   border: 1px solid ${({ theme }) => theme.colors.border};
-  aspect-ratio: 1 / 0.8;
+  aspect-ratio: 1 / 0.9;
 
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   position: relative;
   opacity: 0;
   animation: ${fadeInUp} 0.8s ease-out forwards;
   animation-delay: ${props => props.delay || 0.1}s;
 
-  &:hover {
-    transform: translateY(-5px);
-    background: ${({ theme }) => theme.colors.primary};
-    color: ${({ theme }) => theme.colors.onPrimary};
+  will-change: transform;
 
-    h3, p, span {
-      color: ${({ theme }) => theme.colors.onPrimary};
-    }
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
   }
 `;
+
 
 const CardHeader = styled.div`
   display: flex;
@@ -335,7 +345,7 @@ const CardHeader = styled.div`
 `;
 
 const CardTitle = styled.h3`
-  font-size: 19px;
+  font-size: 23px;
   font-weight: 700;
   color: ${({ theme }) => theme.colors.text};
   margin: 0;
@@ -354,6 +364,7 @@ const TechnologyTag = styled.span`
 
 const CardPeriod = styled.p`
   font-size: 13px;
+  font-weight: 500;
   color: #666;
   margin: 0 0 5px 0;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
@@ -361,6 +372,7 @@ const CardPeriod = styled.p`
 
 const CardTeamSize = styled.p`
   font-size: 13px;
+  font-weight: 500;
   color: #666;
   margin: 0 0 16px 0;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
@@ -400,7 +412,8 @@ const CardPapers = styled.div`
 `;
 
 const AchievementItem = styled.p`
-  font-size: 0.9rem;
+  font-size: 13px;
+  font-weight: 500;
   color: #5A7ACD;
   margin: 4px 0;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
@@ -457,7 +470,7 @@ const ModalOverlay = styled.div`
 const ModalContent = styled.div`
   background: ${({ theme }) => theme.colors.surface};
   border-radius: 20px;
-  padding: 40px;
+  padding: 60px;
   max-width: 800px;
   max-height: 90vh;
   overflow-y: auto;
@@ -547,6 +560,43 @@ const ModalList = styled.ul`
   list-style: decimal;
   padding-left: 24px;
   margin: 0;
+`;
+
+const ProjectImageScroll = styled.div`
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 12px 4px 16px 4px;
+  scroll-snap-type: x mandatory;
+
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #c7c7c7;
+    border-radius: 999px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+`;
+
+const ProjectImage = styled.img`
+  flex: 0 0 auto;
+  width: 360px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid ${({ theme }) => theme.colors.border};
+  scroll-snap-align: start;
+
+  @media (max-width: 768px) {
+    width: 280px;
+    height: 180px;
+  }
 `;
 
 const ModalListItem = styled.li`

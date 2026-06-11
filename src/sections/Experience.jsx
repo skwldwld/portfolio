@@ -187,21 +187,22 @@ const ItemTitle = styled.h3`
 `;
 
 const ItemPeriod = styled.p`
-  font-size: 1rem;
+  font-size: 15px;
   color: #666;
   margin: 0 0 8px 0;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 `;
 
 const ItemRole = styled.p`
-  font-size: 1rem;
+  font-size: 15px;
   color: ${({ theme }) => theme.colors.text};
   margin: 0 0 4px 0;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  color: #666;
 `;
 
 const ItemDescription = styled.p`
-  font-size: 0.95rem;
+  font-size: 14px;
   color: #666;
   margin: 0;
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;

@@ -158,18 +158,18 @@ const SectionSubtitle = styled.p`
 const AboutContent = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  gap: 120px;
   align-items: center;
 
-  @media (max-width: 968px) {
+  @media (max-width: 1000px) {
     grid-template-columns: 1fr;
     gap: 40px;
   }
 `;
 
 const ProfileImageContainer = styled.div`
-  width: 286px;
-  height: 350px;
+  width: 250px;
+  
   overflow: hidden;
   margin-left: auto;
   margin-right: 0;

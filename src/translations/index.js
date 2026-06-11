@@ -78,6 +78,7 @@ export const translations = {
   modal_achievements: { ko: '수상 내역', en: 'Achievements' },
   modal_papers: { ko: '논문', en: 'Papers' },
   modal_details: { ko: '상세 내용', en: 'Details' },
+  modal_images: { ko: '구현 화면', en: 'Screenshots' },
   github_link: { ko: 'GitHub 링크', en: 'GitHub' },
 
   // Footer
