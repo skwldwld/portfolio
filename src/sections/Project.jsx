@@ -4,6 +4,9 @@ import projectsData from '../data/projects.json';
 import { getTechColors } from '../utils/skillsUtils';
 import { useLanguage } from '../context/LanguageContext';
 
+import ArrowLeft from '../assets/arrow_left.svg';
+import ArrowRight from '../assets/arrow_right.svg';
+
 const CATEGORY_KEYS = {
   '전체': 'category_all',
   '멋쟁이사자처럼': 'category_likelion',
@@ -17,6 +20,7 @@ function Projects() {
   const [selectedCategory, setSelectedCategory] = useState('전체');
   const [selectedProject, setSelectedProject] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [zoomedImageIndex, setZoomedImageIndex] = useState(null);
 
   const categories = ['전체', '멋쟁이사자처럼', '인턴십', '캡스톤 프로젝트', '개인 프로젝트'];
   const filteredProjects = selectedCategory === '전체' 
@@ -33,6 +37,22 @@ function Projects() {
     setIsModalOpen(false);
     setSelectedProject(null);
     document.body.style.overflow = 'auto';
+  };
+
+  const images = selectedProject?.images || [];
+
+  const handlePrevImage = (e) => {
+    e.stopPropagation();
+    setZoomedImageIndex((prev) =>
+      prev === 0 ? images.length - 1 : prev - 1
+    );
+  };
+
+  const handleNextImage = (e) => {
+    e.stopPropagation();
+    setZoomedImageIndex((prev) =>
+      prev === images.length - 1 ? 0 : prev + 1
+    );
   };
 
   useEffect(() => {
@@ -198,6 +218,7 @@ function Projects() {
                         key={idx}
                         src={image}
                         alt={`${getText(selectedProject.title)} screen ${idx + 1}`}
+                        onClick={() => setZoomedImageIndex(idx)}
                       />
                     ))}
                   </ProjectImageScroll>
@@ -220,6 +241,32 @@ function Projects() {
           )}
         </ModalContent>
       </ModalOverlay>
+        {zoomedImageIndex !== null && (
+          <ImageZoomOverlay onClick={() => setZoomedImageIndex(null)}>
+            <ImageZoomContent onClick={(e) => e.stopPropagation()}>
+              <ImageZoomCloseButton onClick={() => setZoomedImageIndex(null)}>
+                ×
+              </ImageZoomCloseButton>
+
+              {images.length > 1 && (
+                <>
+                  <ImageNavButton position="left" onClick={handlePrevImage}>
+                    <ArrowIcon src={ArrowLeft} alt="previous" />
+                  </ImageNavButton>
+
+                  <ImageNavButton position="right" onClick={handleNextImage}>
+                    <ArrowIcon src={ArrowRight} alt="next" />
+                  </ImageNavButton>
+                </>
+              )}
+
+              <ZoomedImage
+                src={images[zoomedImageIndex]}
+                alt="zoomed project screen"
+              />
+            </ImageZoomContent>
+          </ImageZoomOverlay>
+        )}
     </ProjectsSection>
   );
 }
@@ -592,6 +639,8 @@ const ProjectImage = styled.img`
   border-radius: 14px;
   border: 1px solid ${({ theme }) => theme.colors.border};
   scroll-snap-align: start;
+  cursor: zoom-in;
+
 
   @media (max-width: 768px) {
     width: 280px;
@@ -637,4 +686,77 @@ const ModalGitHubButton = styled.a`
     color: ${({ theme }) => theme.colors.text};
     transform: scale(1.1);
   }
+`;
+
+const ImageZoomOverlay = styled.div`
+  position: fixed;
+  inset: 0;
+  z-index: 5000;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+`;
+
+const ImageZoomContent = styled.div`
+  position: relative;
+  width: 70vw;
+  height: 88vh;
+  background: ${({ theme }) => theme.colors.surface};
+  border-radius: 20px;
+  padding: 48px 24px 24px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const ImageZoomCloseButton = styled.button`
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: ${({ theme }) => theme.colors.text};
+  font-size: 28px;
+  cursor: pointer;
+`;
+
+const ZoomedImage = styled.img`
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+`;
+
+const ArrowIcon = styled.img`
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+`;
+
+const ImageNavButton = styled.button`
+  position: absolute;
+  top: 50%;
+  ${({ position }) =>
+    position === 'left' ? 'left: 18px;' : 'right: 18px;'}
+
+  transform: translateY(-50%);
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.2s ease;
+  background: transparent;
+
 `;

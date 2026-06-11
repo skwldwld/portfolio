@@ -6,7 +6,7 @@ const Wrap = styled.div`
   position: fixed;
   top: 24px;
   right: 24px;
-  z-index: 9000;
+  z-index: 100;
   display: flex;
   align-items: center;
   gap: 8px;
