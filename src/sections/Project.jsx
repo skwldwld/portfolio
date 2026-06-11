@@ -85,6 +85,7 @@ function Projects() {
             delay={0.1 + index * 0.1}
             onClick={() => handleCardClick(project)}
             selected={selectedProject?.id === project.id}
+            role="button"
           >
             <CardHeader>
               <CardTitle>{getText(project.title)}</CardTitle>
@@ -364,7 +365,6 @@ const ProjectCard = styled.div`
   background: ${({ theme }) => theme.colors.surface};
   border-radius: 16px;
   padding: 32px;
-  cursor: pointer;
   border: 1px solid ${({ theme }) => theme.colors.border};
   aspect-ratio: 1 / 0.9;
 
@@ -375,6 +375,7 @@ const ProjectCard = styled.div`
   animation-delay: ${props => props.delay || 0.1}s;
 
   will-change: transform;
+  cursor: zoom-in;
 
   &:hover {
     transform: translateY(-8px);
@@ -633,18 +634,25 @@ const ProjectImageScroll = styled.div`
 
 const ProjectImage = styled.img`
   flex: 0 0 auto;
-  width: 360px;
-  height: 220px;
-  object-fit: cover;
+
+  max-width: 360px;
+  max-height: 320px;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+
   border-radius: 14px;
   border: 1px solid ${({ theme }) => theme.colors.border};
   scroll-snap-align: start;
   cursor: zoom-in;
 
+  background: ${({ theme }) => theme.colors.surface};
 
   @media (max-width: 768px) {
-    width: 280px;
-    height: 180px;
+    max-width: 280px;
+    max-height: 240px;
   }
 `;
 
@@ -723,6 +731,7 @@ const ImageZoomCloseButton = styled.button`
   color: ${({ theme }) => theme.colors.text};
   font-size: 28px;
   cursor: pointer;
+
 `;
 
 const ZoomedImage = styled.img`
@@ -756,7 +765,11 @@ const ImageNavButton = styled.button`
 
   cursor: pointer;
   z-index: 2;
-  transition: background 0.2s ease;
+  transition: background 1s ease;
   background: transparent;
+
+  &:hover {
+    transform: translateY(-50%) scale(1.4);
+  }
 
 `;

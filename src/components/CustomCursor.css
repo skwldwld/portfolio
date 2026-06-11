@@ -18,8 +18,8 @@
 
 /* 호버 상태: 큰 빈 원 */
 .custom-cursor.hovering {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   background-color: transparent;
   border: 2px solid var(--cursor-border, #000);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);

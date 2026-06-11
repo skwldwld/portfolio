@@ -25,10 +25,15 @@
       ],
       "github": "https://github.com/LikeLionHGU/Hot_Front",
       "images": [
+        "/portfolio/projects/hotspot/ppt1.png",
+        "/portfolio/projects/hotspot/ppt2.png",
+        "/portfolio/projects/hotspot/ppt3.png",
+        "/portfolio/projects/hotspot/ppt4.png",
         "/portfolio/projects/hotspot/hs1.png",
         "/portfolio/projects/hotspot/hs2.png",
         "/portfolio/projects/hotspot/hs3.png",
-        "/portfolio/projects/hotspot/hs4.png"
+        "/portfolio/projects/hotspot/hs4.png",
+        "/portfolio/projects/hotspot/hs5.png"
       ]
     },
     {
@@ -53,6 +58,18 @@
       ],
       "github": "https://github.com/LikeLionHGU/Pickle-Front-2024",
       "images": [
+        "/portfolio/projects/pickle/ppt1.png",
+        "/portfolio/projects/pickle/ppt2.png",
+        "/portfolio/projects/pickle/ppt3.png",
+        "/portfolio/projects/pickle/pc1.png",
+        "/portfolio/projects/pickle/pc7.png",
+        "/portfolio/projects/pickle/pc9.png",
+        "/portfolio/projects/pickle/pc2.png",
+        "/portfolio/projects/pickle/pc3.png",
+        "/portfolio/projects/pickle/pc4.png",
+        "/portfolio/projects/pickle/pc5.png",
+        "/portfolio/projects/pickle/pc6.png",
+        "/portfolio/projects/pickle/pc8.png"
       ]
     },
     {
@@ -77,6 +94,10 @@
       ],
       "github": "https://github.com/LikeLionHGU/MakeUs",
       "images": [
+        "/portfolio/projects/makeus/mu1.png",
+        "/portfolio/projects/makeus/mu2.png",
+        "/portfolio/projects/makeus/mu3.png",
+        "/portfolio/projects/makeus/mu4.png"
       ]
     },
     {
@@ -121,6 +142,9 @@
       ],
       "github": "https://github.com/hwan129/party_bread",
       "images": [
+        "/portfolio/projects/potbbang/pb1.png",
+        "/portfolio/projects/potbbang/pb2.png",
+        "/portfolio/projects/potbbang/pb3.png"
       ]
     },
     {
@@ -212,6 +236,18 @@
       ],
       "github": "https://github.com/Digital-Twin-CGV/GaussianSplattingforweb",
       "images": [
+        "/portfolio/projects/capstone/c1.png",
+        "/portfolio/projects/capstone/c2.png",
+        "/portfolio/projects/capstone/c3.png",
+        "/portfolio/projects/capstone/c4.png",
+        "/portfolio/projects/capstone/c5.png",
+        "/portfolio/projects/capstone/c6.png",
+        "/portfolio/projects/capstone/c7.png",
+        "/portfolio/projects/capstone/c8.png",
+        "/portfolio/projects/capstone/c9.png",
+        "/portfolio/projects/capstone/c10.png",
+        "/portfolio/projects/capstone/c11.png",
+        "/portfolio/projects/capstone/c12.png"
       ]
     },
     {
