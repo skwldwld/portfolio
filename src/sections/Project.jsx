@@ -517,7 +517,7 @@ const ModalOverlay = styled.div`
 
 const ModalContent = styled.div`
   background: ${({ theme }) => theme.colors.surface};
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 60px;
   max-width: 800px;
   max-height: 90vh;

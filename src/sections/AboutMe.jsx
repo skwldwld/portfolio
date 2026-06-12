@@ -129,7 +129,8 @@ const fadeInUp = keyframes`
 
 const AboutMeContainer = styled.div`
   background: ${({ theme }) => theme.colors.surface};
-  border-radius: 20px;
+
+  border-radius: 10px;
   padding: 60px;
   padding-bottom: 80px;
   margin-bottom: 120px;

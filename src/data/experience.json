@@ -33,6 +33,13 @@
       "title": "SQLD",
       "level": "SQLD-060021723",
       "date": "2026.03"
+    },
+    {
+      "id": "information_processing",
+      "icon": "code",
+      "title": "정보처리기사",
+      "level": "26201220147C",
+      "date": "2026.06"
     }
   ],
   "languages": [
