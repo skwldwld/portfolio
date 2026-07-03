@@ -15,7 +15,7 @@ export const translations = {
   // Navigation
   nav_about: { ko: 'About Me', en: 'About Me' },
   nav_skills: { ko: '기술', en: 'Skills' },
-  nav_experience: { ko: '경력', en: 'Experience' },
+  nav_experience: { ko: '일 경험', en: 'Experience' },
   nav_projects: { ko: '프로젝트', en: 'Projects' },
 
   // Message
@@ -56,7 +56,7 @@ export const translations = {
   skills_subtitle: { ko: '제가 다룰 수 있는 기술들입니다.', en: 'Technologies and tools I use.' },
 
   // Experience
-  experience_title: { ko: '경력', en: 'Experience' },
+  experience_title: { ko: '일 경험', en: 'Experience' },
   experience_subtitle: { 
     ko: '저를 성장시켜준 협업과 일 경험입니다.', 
     en: 'Work and collaboration experiences that helped me grow.' 
