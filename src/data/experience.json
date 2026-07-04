@@ -29,7 +29,7 @@
   "certifications": [
     {
       "id": "SQLD",
-      "icon": "code",
+      "icon": "sqld",
       "title": "SQLD",
       "level": "SQLD-060021723",
       "date": "2026.03"
@@ -40,6 +40,13 @@
       "title": "정보처리기사",
       "level": "26201220147C",
       "date": "2026.06"
+    },
+    {
+      "id": "micro_degree",
+      "icon": "md",
+      "title": "마이크로디그리",
+      "level": "빅데이터초급 MD",
+      "date": "2025.08.22"
     }
   ],
   "languages": [

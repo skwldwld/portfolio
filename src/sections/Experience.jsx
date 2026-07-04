@@ -6,6 +6,8 @@ import volunteerIcon from '../assets/volunteer.svg';
 import companyIcon from '../assets/company.svg';
 import opicIcon from '../assets/opic.svg';
 import codeIcon from '../assets/code.svg';
+import mdIcon from '../assets/md.svg';
+import sqldIcon from '../assets/sqld.svg';
 import { useLanguage } from '../context/LanguageContext';
 
 function Experience() {
@@ -23,6 +25,11 @@ function Experience() {
         return opicIcon;
       case 'code':
         return codeIcon;
+      case 'md':
+        return mdIcon;
+      case 'sqld':
+        return sqldIcon;
+
       default:
         return null;
     }
